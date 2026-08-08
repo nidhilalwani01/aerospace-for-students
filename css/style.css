@@ -119,6 +119,16 @@ img {
   width: 100%;
 }
 
+/* ACTIVE PAGE */
+
+.nav-links a.active-page {
+  color: #6ea8ff !important;
+}
+
+.nav-links a.active-page::after {
+  width: 100% !important;
+}
+
 .nav-button {
   padding: 12px 20px;
 
