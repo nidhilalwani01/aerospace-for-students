@@ -9,7 +9,7 @@
 
   <meta
     name="description"
-    content="Explore leading aerospace engineering universities around the world, including public and private schools in the United States."
+    content="Explore verified aerospace engineering programs worldwide and leading public and private aerospace schools in the United States."
   >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,15 +29,14 @@
     <div class="container nav-container">
 
       <a href="index.html" class="logo">
-  <img
-    src="images/logo/logo-white.png"
-    alt="Aerospace for Students"
-  >
-
-  <span class="logo-name">
-    Aerospace <strong>for Students</strong>
-  </span>
-</a>
+        <img
+          src="images/logo/logo-white.png"
+          alt="Aerospace for Students"
+        >
+        <span class="logo-name">
+          Aerospace <strong>for Students</strong>
+        </span>
+      </a>
 
       <nav class="nav-links">
         <a href="index.html">Home</a>
@@ -53,7 +52,7 @@
         </a>
       </nav>
 
-      <button class="menu-button" id="menuButton">
+      <button class="menu-button" id="menuButton" type="button" aria-label="Open navigation menu">
         ☰
       </button>
 
@@ -63,138 +62,171 @@
 
   <main>
 
-    <!-- PAGE HERO -->
     <section class="directory-hero">
       <div class="container">
 
-        <p class="eyebrow">
-          AEROSPACE EDUCATION
-        </p>
+        <p class="eyebrow">AEROSPACE EDUCATION</p>
 
         <h1>
           Find the Right Aerospace University
         </h1>
 
         <p>
-          Explore leading aerospace engineering programs around the world
-          and compare schools based on location, type, degree options and
-          academic strengths.
+          Explore verified aerospace programs around the world and compare
+          leading U.S. public and private schools by degree level and
+          research strengths.
         </p>
+
+        <div class="directory-meta">
+          <span>13 curated programs</span>
+          <span>Official program links</span>
+          <span>Last verified: August 2026</span>
+        </div>
 
       </div>
     </section>
 
 
-    <!-- FILTERS -->
     <section class="directory-section">
-
       <div class="container">
+
+        <div class="directory-intro">
+          <div>
+            <p class="eyebrow">HOW TO USE THIS DIRECTORY</p>
+            <h2>Explore by the path that matters to you.</h2>
+          </div>
+
+          <p>
+            “Best” can mean different things depending on whether you care
+            most about undergraduate study, graduate research, air systems,
+            space systems or a particular specialization. This directory is
+            curated from established aerospace programs and official
+            university information rather than presented as one universal
+            ranking.
+          </p>
+        </div>
+
+
+        <div class="view-tabs" aria-label="University directory views">
+          <button class="view-tab active-view" type="button" data-view="all">
+            All Programs
+          </button>
+
+          <button class="view-tab" type="button" data-view="worldwide">
+            Worldwide Leaders
+          </button>
+
+          <button class="view-tab" type="button" data-view="us-public">
+            U.S. Public
+          </button>
+
+          <button class="view-tab" type="button" data-view="us-private">
+            U.S. Private
+          </button>
+        </div>
+
 
         <div class="filter-panel">
 
           <div class="filter-group search-group">
-
-            <label for="schoolSearch">
-              Search universities
-            </label>
+            <label for="schoolSearch">Search universities</label>
 
             <input
               type="text"
               id="schoolSearch"
-              placeholder="Search by university, country or city..."
+              placeholder="Search school, location or specialty..."
             >
-
           </div>
 
 
           <div class="filter-group">
+            <label for="degreeFilter">Degree level</label>
 
-            <label for="regionFilter">
-              Region
-            </label>
-
-            <select id="regionFilter">
-              <option value="all">All Regions</option>
-              <option value="usa">United States</option>
-              <option value="international">International</option>
+            <select id="degreeFilter">
+              <option value="all">All Levels</option>
+              <option value="undergraduate">Undergraduate</option>
+              <option value="masters">Master's</option>
+              <option value="phd">Ph.D.</option>
+              <option value="minor">Aerospace Minor</option>
             </select>
-
           </div>
 
 
           <div class="filter-group">
+            <label for="strengthFilter">Research strength</label>
 
-            <label for="typeFilter">
-              School Type
-            </label>
-
-            <select id="typeFilter">
-              <option value="all">All Types</option>
-              <option value="public">Public</option>
-              <option value="private">Private</option>
+            <select id="strengthFilter">
+              <option value="all">All Strengths</option>
+              <option value="aerodynamics">Aerodynamics</option>
+              <option value="propulsion">Propulsion</option>
+              <option value="space">Space Systems</option>
+              <option value="autonomy">Autonomy & Controls</option>
+              <option value="structures">Structures & Materials</option>
+              <option value="astrodynamics">Astrodynamics</option>
             </select>
-
           </div>
 
         </div>
 
 
         <div class="directory-heading">
-
           <div>
             <p class="eyebrow">UNIVERSITY DIRECTORY</p>
-
-            <h2>
-              Aerospace Programs
-            </h2>
+            <h2>Aerospace Programs</h2>
           </div>
 
           <p id="resultCount">
-            Showing 8 universities
+            Showing 13 universities
           </p>
-
         </div>
 
 
         <div class="university-grid" id="universityGrid">
 
-          <!-- MIT -->
           <article
             class="university-card"
-            data-name="Massachusetts Institute of Technology MIT Cambridge USA"
-            data-region="usa"
+            data-name="Massachusetts Institute of Technology MIT Cambridge, Massachusetts, USA Aerodynamics Propulsion Space Systems Autonomy Structures"
+            data-view="worldwide us-private"
             data-type="private"
+            data-degrees="undergraduate masters phd"
+            data-strengths="aerodynamics propulsion space autonomy structures"
           >
-
             <div class="university-top">
-
-              <span class="school-type">
-                Private
-              </span>
-
-              <span class="country-label">
-                USA
-              </span>
-
+              <div class="school-badges">
+                <span class="school-type">Private</span>
+                <span class="verified-badge">Verified</span>
+              </div>
+              <span class="country-label">USA</span>
             </div>
 
-            <h3>
-              Massachusetts Institute of Technology
-            </h3>
+            <h3>Massachusetts Institute of Technology</h3>
+            <p class="school-location">Cambridge, Massachusetts, USA</p>
 
-            <p class="school-location">
-              Cambridge, Massachusetts
-            </p>
+            <p class="school-description">MIT AeroAstro offers dedicated undergraduate and graduate study spanning aircraft, spacecraft, autonomy, propulsion, structures and complex aerospace systems.</p>
 
-            <p class="school-description">
-              Known worldwide for advanced aerospace research, engineering,
-              propulsion, autonomous systems and space technology.
-            </p>
+            <div class="school-detail-block">
+              <p class="school-detail-label">Degree options</p>
+              <div class="degree-list">
+                <span>B.S. Aerospace Engineering</span>
+                <span>S.M.</span>
+                <span>Ph.D.</span>
+              </div>
+            </div>
 
-            <div class="tag-list">
-              <span>Aeronautics</span>
-              <span>Astronautics</span>
-              <span>Research</span>
+            <div class="school-detail-block">
+              <p class="school-detail-label">Aerospace strengths</p>
+              <div class="tag-list">
+                <span>Aerodynamics</span>
+                <span>Propulsion</span>
+                <span>Space Systems</span>
+                <span>Autonomy</span>
+                <span>Structures</span>
+              </div>
+            </div>
+
+            <div class="recognition-note">
+              <span>Why it stands out</span>
+              <p>Dedicated B.S. in Aerospace Engineering plus graduate AeroAstro programs.</p>
             </div>
 
             <a
@@ -203,202 +235,54 @@
               rel="noopener noreferrer"
               class="school-link"
             >
-              Visit Program →
+              Visit Official Program →
             </a>
-
           </article>
 
-
-          <!-- Georgia Tech -->
           <article
             class="university-card"
-            data-name="Georgia Institute of Technology Georgia Tech Atlanta USA"
-            data-region="usa"
-            data-type="public"
-          >
-
-            <div class="university-top">
-
-              <span class="school-type">
-                Public
-              </span>
-
-              <span class="country-label">
-                USA
-              </span>
-
-            </div>
-
-            <h3>
-              Georgia Institute of Technology
-            </h3>
-
-            <p class="school-location">
-              Atlanta, Georgia
-            </p>
-
-            <p class="school-description">
-              A major aerospace engineering program with strong work in
-              aerodynamics, propulsion, flight mechanics and space systems.
-            </p>
-
-            <div class="tag-list">
-              <span>Propulsion</span>
-              <span>Flight</span>
-              <span>Space Systems</span>
-            </div>
-
-            <a
-              href="https://ae.gatech.edu/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="school-link"
-            >
-              Visit Program →
-            </a>
-
-          </article>
-
-
-          <!-- Purdue -->
-          <article
-            class="university-card"
-            data-name="Purdue University West Lafayette Indiana USA"
-            data-region="usa"
-            data-type="public"
-          >
-
-            <div class="university-top">
-
-              <span class="school-type">
-                Public
-              </span>
-
-              <span class="country-label">
-                USA
-              </span>
-
-            </div>
-
-            <h3>
-              Purdue University
-            </h3>
-
-            <p class="school-location">
-              West Lafayette, Indiana
-            </p>
-
-            <p class="school-description">
-              A historic aerospace program known for astronaut alumni,
-              propulsion research, aircraft design and space exploration.
-            </p>
-
-            <div class="tag-list">
-              <span>Space</span>
-              <span>Propulsion</span>
-              <span>Aircraft Design</span>
-            </div>
-
-            <a
-              href="https://engineering.purdue.edu/AAE"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="school-link"
-            >
-              Visit Program →
-            </a>
-
-          </article>
-
-
-          <!-- Texas A&M -->
-          <article
-            class="university-card"
-            data-name="Texas A&M University College Station Texas USA"
-            data-region="usa"
-            data-type="public"
-          >
-
-            <div class="university-top">
-
-              <span class="school-type">
-                Public
-              </span>
-
-              <span class="country-label">
-                USA
-              </span>
-
-            </div>
-
-            <h3>
-              Texas A&amp;M University
-            </h3>
-
-            <p class="school-location">
-              College Station, Texas
-            </p>
-
-            <p class="school-description">
-              Offers extensive aerospace engineering education and research
-              across aerodynamics, structures, propulsion and space systems.
-            </p>
-
-            <div class="tag-list">
-              <span>Aerodynamics</span>
-              <span>Structures</span>
-              <span>Space</span>
-            </div>
-
-            <a
-              href="https://engineering.tamu.edu/aerospace/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="school-link"
-            >
-              Visit Program →
-            </a>
-
-          </article>
-
-
-          <!-- Stanford -->
-          <article
-            class="university-card"
-            data-name="Stanford University Stanford California USA"
-            data-region="usa"
+            data-name="Stanford University Stanford Stanford, California, USA Autonomy Spacecraft Aerodynamics Propulsion Structures"
+            data-view="worldwide us-private"
             data-type="private"
+            data-degrees="undergraduate masters phd"
+            data-strengths="aerodynamics propulsion space autonomy structures"
           >
-
             <div class="university-top">
-
-              <span class="school-type">
-                Private
-              </span>
-
-              <span class="country-label">
-                USA
-              </span>
-
+              <div class="school-badges">
+                <span class="school-type">Private</span>
+                <span class="verified-badge">Verified</span>
+              </div>
+              <span class="country-label">USA</span>
             </div>
 
-            <h3>
-              Stanford University
-            </h3>
+            <h3>Stanford University</h3>
+            <p class="school-location">Stanford, California, USA</p>
 
-            <p class="school-location">
-              Stanford, California
-            </p>
+            <p class="school-description">Stanford's Aeronautics and Astronautics program covers aircraft and spacecraft engineering, autonomy, robotics, computation, structures, fluids and propulsion.</p>
 
-            <p class="school-description">
-              Strong in aeronautics, autonomous systems, spacecraft,
-              computational engineering and interdisciplinary research.
-            </p>
+            <div class="school-detail-block">
+              <p class="school-detail-label">Degree options</p>
+              <div class="degree-list">
+                <span>B.S. Aeronautics & Astronautics</span>
+                <span>M.S.</span>
+                <span>Ph.D.</span>
+              </div>
+            </div>
 
-            <div class="tag-list">
-              <span>Autonomy</span>
-              <span>Spacecraft</span>
-              <span>Computation</span>
+            <div class="school-detail-block">
+              <p class="school-detail-label">Aerospace strengths</p>
+              <div class="tag-list">
+                <span>Autonomy</span>
+                <span>Spacecraft</span>
+                <span>Aerodynamics</span>
+                <span>Propulsion</span>
+                <span>Structures</span>
+              </div>
+            </div>
+
+            <div class="recognition-note">
+              <span>Why it stands out</span>
+              <p>Offers a dedicated B.S. in Aeronautics and Astronautics plus graduate programs.</p>
             </div>
 
             <a
@@ -407,100 +291,446 @@
               rel="noopener noreferrer"
               class="school-link"
             >
-              Visit Program →
+              Visit Official Program →
             </a>
-
           </article>
 
-
-          <!-- Caltech -->
           <article
             class="university-card"
-            data-name="California Institute of Technology Caltech Pasadena California USA"
-            data-region="usa"
+            data-name="California Institute of Technology Caltech Pasadena, California, USA Fluid Mechanics Propulsion Space Engineering Autonomous Systems Materials"
+            data-view="worldwide us-private"
             data-type="private"
+            data-degrees="minor masters phd"
+            data-strengths="aerodynamics propulsion space autonomy structures"
           >
-
             <div class="university-top">
-
-              <span class="school-type">
-                Private
-              </span>
-
-              <span class="country-label">
-                USA
-              </span>
-
+              <div class="school-badges">
+                <span class="school-type">Private</span>
+                <span class="verified-badge">Verified</span>
+              </div>
+              <span class="country-label">USA</span>
             </div>
 
-            <h3>
-              California Institute of Technology
-            </h3>
+            <h3>California Institute of Technology</h3>
+            <p class="school-location">Pasadena, California, USA</p>
 
-            <p class="school-location">
-              Pasadena, California
-            </p>
+            <p class="school-description">Caltech's aerospace department is graduate-focused. Undergraduates can complete an aerospace minor, while graduate study spans aeronautics and space engineering.</p>
 
-            <p class="school-description">
-              A research-intensive institution with strengths in space
-              science, fluid mechanics, propulsion and spacecraft systems.
-            </p>
+            <div class="school-detail-block">
+              <p class="school-detail-label">Degree options</p>
+              <div class="degree-list">
+                <span>Aerospace Minor</span>
+                <span>M.S.</span>
+                <span>Ph.D.</span>
+              </div>
+            </div>
 
-            <div class="tag-list">
-              <span>Space Science</span>
-              <span>Fluid Mechanics</span>
-              <span>Research</span>
+            <div class="school-detail-block">
+              <p class="school-detail-label">Aerospace strengths</p>
+              <div class="tag-list">
+                <span>Fluid Mechanics</span>
+                <span>Propulsion</span>
+                <span>Space Engineering</span>
+                <span>Autonomous Systems</span>
+                <span>Materials</span>
+              </div>
+            </div>
+
+            <div class="recognition-note">
+              <span>Why it stands out</span>
+              <p>Important distinction: aerospace is an undergraduate minor, not a standalone bachelor's major.</p>
             </div>
 
             <a
-              href="https://galcit.caltech.edu/"
+              href="https://aerospace.caltech.edu/academics"
               target="_blank"
               rel="noopener noreferrer"
               class="school-link"
             >
-              Visit Program →
+              Visit Official Program →
             </a>
-
           </article>
 
-
-          <!-- TU Delft -->
           <article
             class="university-card"
-            data-name="Delft University of Technology TU Delft Netherlands Europe"
-            data-region="international"
+            data-name="Georgia Institute of Technology Georgia Tech Atlanta, Georgia, USA Aerodynamics Propulsion Flight Mechanics Avionics Space Systems"
+            data-view="worldwide us-public"
             data-type="public"
+            data-degrees="undergraduate masters phd"
+            data-strengths="aerodynamics propulsion space autonomy structures"
           >
-
             <div class="university-top">
-
-              <span class="school-type">
-                Public
-              </span>
-
-              <span class="country-label">
-                Netherlands
-              </span>
-
+              <div class="school-badges">
+                <span class="school-type">Public</span>
+                <span class="verified-badge">Verified</span>
+              </div>
+              <span class="country-label">USA</span>
             </div>
 
-            <h3>
-              Delft University of Technology
-            </h3>
+            <h3>Georgia Institute of Technology</h3>
+            <p class="school-location">Atlanta, Georgia, USA</p>
 
-            <p class="school-location">
-              Delft, Netherlands
-            </p>
+            <p class="school-description">Georgia Tech combines analytical, experimental and design work across aerodynamics, structures, flight mechanics, controls, avionics, propulsion and aerospace systems.</p>
 
-            <p class="school-description">
-              One of Europe's major aerospace programs with work in
-              aerodynamics, aircraft design, spaceflight and sustainability.
-            </p>
+            <div class="school-detail-block">
+              <p class="school-detail-label">Degree options</p>
+              <div class="degree-list">
+                <span>B.S. Aerospace Engineering</span>
+                <span>M.S.</span>
+                <span>Ph.D.</span>
+              </div>
+            </div>
 
-            <div class="tag-list">
-              <span>Aircraft</span>
-              <span>Spaceflight</span>
-              <span>Sustainability</span>
+            <div class="school-detail-block">
+              <p class="school-detail-label">Aerospace strengths</p>
+              <div class="tag-list">
+                <span>Aerodynamics</span>
+                <span>Propulsion</span>
+                <span>Flight Mechanics</span>
+                <span>Avionics</span>
+                <span>Space Systems</span>
+              </div>
+            </div>
+
+            <div class="recognition-note">
+              <span>Why it stands out</span>
+              <p>Its B.S. allows students to pursue air- or space-focused study.</p>
+            </div>
+
+            <a
+              href="https://ae.gatech.edu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="school-link"
+            >
+              Visit Official Program →
+            </a>
+          </article>
+
+          <article
+            class="university-card"
+            data-name="Purdue University Purdue West Lafayette, Indiana, USA Aerodynamics Propulsion Astrodynamics Autonomy & Control Structures"
+            data-view="worldwide us-public"
+            data-type="public"
+            data-degrees="undergraduate masters phd"
+            data-strengths="aerodynamics propulsion space autonomy structures astrodynamics"
+          >
+            <div class="university-top">
+              <div class="school-badges">
+                <span class="school-type">Public</span>
+                <span class="verified-badge">Verified</span>
+              </div>
+              <span class="country-label">USA</span>
+            </div>
+
+            <h3>Purdue University</h3>
+            <p class="school-location">West Lafayette, Indiana, USA</p>
+
+            <p class="school-description">Purdue's School of Aeronautics and Astronautics offers a broad aerospace curriculum with strengths from propulsion and aerodynamics to spacecraft and autonomous systems.</p>
+
+            <div class="school-detail-block">
+              <p class="school-detail-label">Degree options</p>
+              <div class="degree-list">
+                <span>B.S. Aeronautical & Astronautical Engineering</span>
+                <span>M.S.</span>
+                <span>Ph.D.</span>
+              </div>
+            </div>
+
+            <div class="school-detail-block">
+              <p class="school-detail-label">Aerospace strengths</p>
+              <div class="tag-list">
+                <span>Aerodynamics</span>
+                <span>Propulsion</span>
+                <span>Astrodynamics</span>
+                <span>Autonomy & Control</span>
+                <span>Structures</span>
+              </div>
+            </div>
+
+            <div class="recognition-note">
+              <span>Why it stands out</span>
+              <p>ABET-accredited B.S. in Aeronautical and Astronautical Engineering.</p>
+            </div>
+
+            <a
+              href="https://engineering.purdue.edu/AAE"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="school-link"
+            >
+              Visit Official Program →
+            </a>
+          </article>
+
+          <article
+            class="university-card"
+            data-name="University of Michigan Michigan Ann Arbor, Michigan, USA Aerodynamics & Propulsion Autonomous Systems Computation Space Systems Structures"
+            data-view="worldwide us-public"
+            data-type="public"
+            data-degrees="undergraduate masters phd"
+            data-strengths="aerodynamics propulsion space autonomy structures"
+          >
+            <div class="university-top">
+              <div class="school-badges">
+                <span class="school-type">Public</span>
+                <span class="verified-badge">Verified</span>
+              </div>
+              <span class="country-label">USA</span>
+            </div>
+
+            <h3>University of Michigan</h3>
+            <p class="school-location">Ann Arbor, Michigan, USA</p>
+
+            <p class="school-description">Michigan Aerospace offers undergraduate and graduate study across aerodynamics, propulsion, autonomy, computation, space systems, structures and materials.</p>
+
+            <div class="school-detail-block">
+              <p class="school-detail-label">Degree options</p>
+              <div class="degree-list">
+                <span>B.S.E. Aerospace Engineering</span>
+                <span>M.S.E./M.Eng.</span>
+                <span>Ph.D.</span>
+              </div>
+            </div>
+
+            <div class="school-detail-block">
+              <p class="school-detail-label">Aerospace strengths</p>
+              <div class="tag-list">
+                <span>Aerodynamics & Propulsion</span>
+                <span>Autonomous Systems</span>
+                <span>Computation</span>
+                <span>Space Systems</span>
+                <span>Structures</span>
+              </div>
+            </div>
+
+            <div class="recognition-note">
+              <span>Why it stands out</span>
+              <p>The department describes itself as the nation's oldest aerospace program.</p>
+            </div>
+
+            <a
+              href="https://aero.engin.umich.edu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="school-link"
+            >
+              Visit Official Program →
+            </a>
+          </article>
+
+          <article
+            class="university-card"
+            data-name="Texas A&M University Texas A&M College Station, Texas, USA Aerodynamics Propulsion Autonomous Flight Structures Space Systems"
+            data-view="us-public"
+            data-type="public"
+            data-degrees="undergraduate masters phd"
+            data-strengths="aerodynamics propulsion space autonomy structures"
+          >
+            <div class="university-top">
+              <div class="school-badges">
+                <span class="school-type">Public</span>
+                <span class="verified-badge">Verified</span>
+              </div>
+              <span class="country-label">USA</span>
+            </div>
+
+            <h3>Texas A&M University</h3>
+            <p class="school-location">College Station, Texas, USA</p>
+
+            <p class="school-description">Texas A&M provides aerospace education from undergraduate fundamentals through doctoral research, with work in both air and space systems.</p>
+
+            <div class="school-detail-block">
+              <p class="school-detail-label">Degree options</p>
+              <div class="degree-list">
+                <span>B.S. Aerospace Engineering</span>
+                <span>M.S./M.Eng.</span>
+                <span>Ph.D.</span>
+              </div>
+            </div>
+
+            <div class="school-detail-block">
+              <p class="school-detail-label">Aerospace strengths</p>
+              <div class="tag-list">
+                <span>Aerodynamics</span>
+                <span>Propulsion</span>
+                <span>Autonomous Flight</span>
+                <span>Structures</span>
+                <span>Space Systems</span>
+              </div>
+            </div>
+
+            <div class="recognition-note">
+              <span>Why it stands out</span>
+              <p>Offers aerospace degrees from B.S. through Ph.D. level.</p>
+            </div>
+
+            <a
+              href="https://engineering.tamu.edu/aerospace/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="school-link"
+            >
+              Visit Official Program →
+            </a>
+          </article>
+
+          <article
+            class="university-card"
+            data-name="University of Colorado Boulder CU Boulder Boulder, Colorado, USA Space Systems Remote Sensing Autonomy Guidance & Control Aerodynamics"
+            data-view="us-public"
+            data-type="public"
+            data-degrees="undergraduate masters phd"
+            data-strengths="aerodynamics space autonomy structures astrodynamics"
+          >
+            <div class="university-top">
+              <div class="school-badges">
+                <span class="school-type">Public</span>
+                <span class="verified-badge">Verified</span>
+              </div>
+              <span class="country-label">USA</span>
+            </div>
+
+            <h3>University of Colorado Boulder</h3>
+            <p class="school-location">Boulder, Colorado, USA</p>
+
+            <p class="school-description">CU Boulder's Smead Aerospace program balances aeronautics and astronautics with hands-on work in satellites, mission operations, remote sensing and autonomous systems.</p>
+
+            <div class="school-detail-block">
+              <p class="school-detail-label">Degree options</p>
+              <div class="degree-list">
+                <span>B.S. Aerospace Engineering Sciences</span>
+                <span>M.S.</span>
+                <span>Ph.D.</span>
+              </div>
+            </div>
+
+            <div class="school-detail-block">
+              <p class="school-detail-label">Aerospace strengths</p>
+              <div class="tag-list">
+                <span>Space Systems</span>
+                <span>Remote Sensing</span>
+                <span>Autonomy</span>
+                <span>Guidance & Control</span>
+                <span>Aerodynamics</span>
+              </div>
+            </div>
+
+            <div class="recognition-note">
+              <span>Why it stands out</span>
+              <p>Home to a dedicated 180,000-square-foot aerospace engineering sciences building.</p>
+            </div>
+
+            <a
+              href="https://www.colorado.edu/aerospace/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="school-link"
+            >
+              Visit Official Program →
+            </a>
+          </article>
+
+          <article
+            class="university-card"
+            data-name="The University of Texas at Austin UT Austin Austin, Texas, USA Fluid Mechanics Controls Structures Space Systems Propulsion"
+            data-view="us-public"
+            data-type="public"
+            data-degrees="undergraduate masters phd"
+            data-strengths="aerodynamics propulsion space autonomy structures"
+          >
+            <div class="university-top">
+              <div class="school-badges">
+                <span class="school-type">Public</span>
+                <span class="verified-badge">Verified</span>
+              </div>
+              <span class="country-label">USA</span>
+            </div>
+
+            <h3>The University of Texas at Austin</h3>
+            <p class="school-location">Austin, Texas, USA</p>
+
+            <p class="school-description">UT Austin's aerospace curriculum covers fluid mechanics, controls, structural dynamics, materials and design, supported by aerospace research centers and laboratories.</p>
+
+            <div class="school-detail-block">
+              <p class="school-detail-label">Degree options</p>
+              <div class="degree-list">
+                <span>B.S. Aerospace Engineering</span>
+                <span>M.S.E.</span>
+                <span>Ph.D.</span>
+              </div>
+            </div>
+
+            <div class="school-detail-block">
+              <p class="school-detail-label">Aerospace strengths</p>
+              <div class="tag-list">
+                <span>Fluid Mechanics</span>
+                <span>Controls</span>
+                <span>Structures</span>
+                <span>Space Systems</span>
+                <span>Propulsion</span>
+              </div>
+            </div>
+
+            <div class="recognition-note">
+              <span>Why it stands out</span>
+              <p>The department identifies its undergraduate aerospace program as a current U.S. top-10 program.</p>
+            </div>
+
+            <a
+              href="https://ae.utexas.edu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="school-link"
+            >
+              Visit Official Program →
+            </a>
+          </article>
+
+          <article
+            class="university-card"
+            data-name="Delft University of Technology TU Delft Delft, Netherlands Aircraft Design Spaceflight Aerodynamics Structures Sustainability"
+            data-view="worldwide"
+            data-type="public"
+            data-degrees="undergraduate masters phd"
+            data-strengths="aerodynamics propulsion space autonomy structures"
+          >
+            <div class="university-top">
+              <div class="school-badges">
+                <span class="school-type">Public</span>
+                <span class="verified-badge">Verified</span>
+              </div>
+              <span class="country-label">Netherlands</span>
+            </div>
+
+            <h3>Delft University of Technology</h3>
+            <p class="school-location">Delft, Netherlands</p>
+
+            <p class="school-description">TU Delft offers a dedicated three-year Aerospace Engineering bachelor's program and advanced master's study in aerospace technology.</p>
+
+            <div class="school-detail-block">
+              <p class="school-detail-label">Degree options</p>
+              <div class="degree-list">
+                <span>B.Sc. Aerospace Engineering</span>
+                <span>M.Sc. Aerospace Engineering</span>
+                <span>Ph.D.</span>
+              </div>
+            </div>
+
+            <div class="school-detail-block">
+              <p class="school-detail-label">Aerospace strengths</p>
+              <div class="tag-list">
+                <span>Aircraft Design</span>
+                <span>Spaceflight</span>
+                <span>Aerodynamics</span>
+                <span>Structures</span>
+                <span>Sustainability</span>
+              </div>
+            </div>
+
+            <div class="recognition-note">
+              <span>Why it stands out</span>
+              <p>Its Aerospace Engineering B.Sc. is one of TU Delft's fully English-taught bachelor's programs.</p>
             </div>
 
             <a
@@ -509,60 +739,175 @@
               rel="noopener noreferrer"
               class="school-link"
             >
-              Visit Program →
+              Visit Official Program →
             </a>
-
           </article>
 
-
-          <!-- Imperial -->
           <article
             class="university-card"
-            data-name="Imperial College London United Kingdom UK Aerospace"
-            data-region="international"
+            data-name="Imperial College London Imperial London, United Kingdom Aerodynamics Structures Flight Mechanics Control Computation"
+            data-view="worldwide"
             data-type="public"
+            data-degrees="undergraduate masters phd"
+            data-strengths="aerodynamics propulsion autonomy structures"
           >
-
             <div class="university-top">
-
-              <span class="school-type">
-                Public
-              </span>
-
-              <span class="country-label">
-                UK
-              </span>
-
+              <div class="school-badges">
+                <span class="school-type">Public</span>
+                <span class="verified-badge">Verified</span>
+              </div>
+              <span class="country-label">United Kingdom</span>
             </div>
 
-            <h3>
-              Imperial College London
-            </h3>
+            <h3>Imperial College London</h3>
+            <p class="school-location">London, United Kingdom</p>
 
-            <p class="school-location">
-              London, United Kingdom
-            </p>
+            <p class="school-description">Imperial's Department of Aeronautics offers integrated undergraduate MEng pathways and postgraduate study focused on the science and engineering of flight.</p>
 
-            <p class="school-description">
-              Offers advanced aeronautical engineering education with
-              strengths in fluid mechanics, structures, control and flight.
-            </p>
+            <div class="school-detail-block">
+              <p class="school-detail-label">Degree options</p>
+              <div class="degree-list">
+                <span>Undergraduate M.Eng.</span>
+                <span>M.Sc.</span>
+                <span>Ph.D.</span>
+              </div>
+            </div>
 
-            <div class="tag-list">
-              <span>Flight</span>
-              <span>Structures</span>
-              <span>Fluid Mechanics</span>
+            <div class="school-detail-block">
+              <p class="school-detail-label">Aerospace strengths</p>
+              <div class="tag-list">
+                <span>Aerodynamics</span>
+                <span>Structures</span>
+                <span>Flight Mechanics</span>
+                <span>Control</span>
+                <span>Computation</span>
+              </div>
+            </div>
+
+            <div class="recognition-note">
+              <span>Why it stands out</span>
+              <p>The department offers multiple undergraduate MEng routes with professional accreditation.</p>
             </div>
 
             <a
-              href="https://www.imperial.ac.uk/aeronautics/"
+              href="https://www.imperial.ac.uk/engineering/departments/aeronautics/"
               target="_blank"
               rel="noopener noreferrer"
               class="school-link"
             >
-              Visit Program →
+              Visit Official Program →
             </a>
+          </article>
 
+          <article
+            class="university-card"
+            data-name="Politecnico di Milano Polimi Milan, Italy Aircraft Design Space Engineering Propulsion Structures Flight Dynamics"
+            data-view="worldwide"
+            data-type="public"
+            data-degrees="undergraduate masters phd"
+            data-strengths="aerodynamics propulsion space structures astrodynamics"
+          >
+            <div class="university-top">
+              <div class="school-badges">
+                <span class="school-type">Public</span>
+                <span class="verified-badge">Verified</span>
+              </div>
+              <span class="country-label">Italy</span>
+            </div>
+
+            <h3>Politecnico di Milano</h3>
+            <p class="school-location">Milan, Italy</p>
+
+            <p class="school-description">Politecnico di Milano provides a full aerospace pathway from bachelor's study to master's specializations in aeronautical or space engineering and doctoral research.</p>
+
+            <div class="school-detail-block">
+              <p class="school-detail-label">Degree options</p>
+              <div class="degree-list">
+                <span>B.Sc. Aerospace Engineering</span>
+                <span>M.Sc. Aeronautical/Space Engineering</span>
+                <span>Ph.D.</span>
+              </div>
+            </div>
+
+            <div class="school-detail-block">
+              <p class="school-detail-label">Aerospace strengths</p>
+              <div class="tag-list">
+                <span>Aircraft Design</span>
+                <span>Space Engineering</span>
+                <span>Propulsion</span>
+                <span>Structures</span>
+                <span>Flight Dynamics</span>
+              </div>
+            </div>
+
+            <div class="recognition-note">
+              <span>Why it stands out</span>
+              <p>Its Department of Aerospace Science and Technology is dedicated entirely to aerospace studies.</p>
+            </div>
+
+            <a
+              href="https://www.aero.polimi.it/en/study-programmes"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="school-link"
+            >
+              Visit Official Program →
+            </a>
+          </article>
+
+          <article
+            class="university-card"
+            data-name="ISAE-SUPAERO ISAE-SUPAERO Toulouse, France Aeronautics Space Systems Structures Propulsion Systems Engineering"
+            data-view="worldwide"
+            data-type="public"
+            data-degrees="masters"
+            data-strengths="aerodynamics propulsion space autonomy structures"
+          >
+            <div class="university-top">
+              <div class="school-badges">
+                <span class="school-type">Public</span>
+                <span class="verified-badge">Verified</span>
+              </div>
+              <span class="country-label">France</span>
+            </div>
+
+            <h3>ISAE-SUPAERO</h3>
+            <p class="school-location">Toulouse, France</p>
+
+            <p class="school-description">ISAE-SUPAERO is a specialist aerospace institution in Toulouse offering internationally focused graduate education in aerospace engineering and advanced specializations.</p>
+
+            <div class="school-detail-block">
+              <p class="school-detail-label">Degree options</p>
+              <div class="degree-list">
+                <span>M.Sc. Aerospace Engineering</span>
+                <span>Advanced Master's Programs</span>
+              </div>
+            </div>
+
+            <div class="school-detail-block">
+              <p class="school-detail-label">Aerospace strengths</p>
+              <div class="tag-list">
+                <span>Aeronautics</span>
+                <span>Space Systems</span>
+                <span>Structures</span>
+                <span>Propulsion</span>
+                <span>Systems Engineering</span>
+              </div>
+            </div>
+
+            <div class="recognition-note">
+              <span>Why it stands out</span>
+              <p>Best suited on this directory for students seeking graduate-level aerospace specialization.</p>
+            </div>
+
+            <a
+              href="https://www.isae-supaero.fr/en/programmes/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="school-link"
+            >
+              Visit Official Program →
+            </a>
           </article>
 
         </div>
@@ -570,33 +915,33 @@
 
         <div class="empty-state" id="emptyState">
           <h3>No universities found</h3>
+          <p>Try changing your search, degree level or research filter.</p>
+        </div>
 
+
+        <div class="directory-source-note">
+          <strong>About this directory</strong>
           <p>
-            Try changing your search or filter selections.
+            Degree offerings and program descriptions are based on official
+            university sources checked in August 2026. Programs, admissions
+            requirements and rankings can change, so always confirm details
+            on the university's official site before applying.
           </p>
         </div>
 
       </div>
-
     </section>
 
   </main>
 
 
   <footer>
-
     <div class="container footer-content">
 
       <div>
-        <h3>
-          Aerospace for Students
-        </h3>
-
-        <p>
-          Helping the next generation discover their path into aerospace.
-        </p>
+        <h3>Aerospace for Students</h3>
+        <p>Helping the next generation discover their path into aerospace.</p>
       </div>
-
 
       <div class="footer-links">
         <a href="about.html">About</a>
@@ -607,11 +952,9 @@
 
     </div>
 
-
     <div class="container footer-bottom">
       © 2026 Aerospace for Students
     </div>
-
   </footer>
 
 

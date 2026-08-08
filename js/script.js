@@ -8,16 +8,33 @@ if (menuButton && navLinks) {
 }
 
 
-/* UNIVERSITY FILTERING */
+/* =========================
+   UNIVERSITY DIRECTORY
+========================= */
 
-const schoolSearch = document.getElementById("schoolSearch");
-const regionFilter = document.getElementById("regionFilter");
-const typeFilter = document.getElementById("typeFilter");
+const schoolSearch =
+  document.getElementById("schoolSearch");
 
-const universityCards = document.querySelectorAll(".university-card");
+const degreeFilter =
+  document.getElementById("degreeFilter");
 
-const resultCount = document.getElementById("resultCount");
-const emptyState = document.getElementById("emptyState");
+const strengthFilter =
+  document.getElementById("strengthFilter");
+
+const universityCards =
+  document.querySelectorAll(".university-card");
+
+const viewTabs =
+  document.querySelectorAll(".view-tab");
+
+const resultCount =
+  document.getElementById("resultCount");
+
+const emptyState =
+  document.getElementById("emptyState");
+
+
+let selectedView = "all";
 
 
 function filterUniversities() {
@@ -27,47 +44,59 @@ function filterUniversities() {
   }
 
   const searchValue =
-    schoolSearch ? schoolSearch.value.toLowerCase().trim() : "";
+    schoolSearch
+      ? schoolSearch.value.toLowerCase().trim()
+      : "";
 
-  const regionValue =
-    regionFilter ? regionFilter.value : "all";
+  const degreeValue =
+    degreeFilter
+      ? degreeFilter.value
+      : "all";
 
-  const typeValue =
-    typeFilter ? typeFilter.value : "all";
+  const strengthValue =
+    strengthFilter
+      ? strengthFilter.value
+      : "all";
 
   let visibleCount = 0;
 
 
   universityCards.forEach((card) => {
 
-    const schoolName =
-      card.dataset.name.toLowerCase();
+    const searchableText =
+      (card.dataset.name || "").toLowerCase();
 
-    const schoolRegion =
-      card.dataset.region;
+    const views =
+      (card.dataset.view || "").split(" ");
 
-    const schoolType =
-      card.dataset.type;
+    const degrees =
+      (card.dataset.degrees || "").split(" ");
+
+    const strengths =
+      (card.dataset.strengths || "").split(" ");
 
 
     const matchesSearch =
-      schoolName.includes(searchValue);
+      searchableText.includes(searchValue);
 
+    const matchesView =
+      selectedView === "all" ||
+      views.includes(selectedView);
 
-    const matchesRegion =
-      regionValue === "all" ||
-      schoolRegion === regionValue;
+    const matchesDegree =
+      degreeValue === "all" ||
+      degrees.includes(degreeValue);
 
-
-    const matchesType =
-      typeValue === "all" ||
-      schoolType === typeValue;
+    const matchesStrength =
+      strengthValue === "all" ||
+      strengths.includes(strengthValue);
 
 
     if (
       matchesSearch &&
-      matchesRegion &&
-      matchesType
+      matchesView &&
+      matchesDegree &&
+      matchesStrength
     ) {
 
       card.style.display = "flex";
@@ -86,7 +115,11 @@ function filterUniversities() {
   if (resultCount) {
 
     resultCount.textContent =
-      `Showing ${visibleCount} ${visibleCount === 1 ? "university" : "universities"}`;
+      `Showing ${visibleCount} ${
+        visibleCount === 1
+          ? "university"
+          : "universities"
+      }`;
 
   }
 
@@ -94,11 +127,33 @@ function filterUniversities() {
   if (emptyState) {
 
     emptyState.style.display =
-      visibleCount === 0 ? "block" : "none";
+      visibleCount === 0
+        ? "block"
+        : "none";
 
   }
 
 }
+
+
+viewTabs.forEach((button) => {
+
+  button.addEventListener("click", () => {
+
+    viewTabs.forEach((tab) => {
+      tab.classList.remove("active-view");
+    });
+
+    button.classList.add("active-view");
+
+    selectedView =
+      button.dataset.view || "all";
+
+    filterUniversities();
+
+  });
+
+});
 
 
 if (schoolSearch) {
@@ -109,16 +164,16 @@ if (schoolSearch) {
 }
 
 
-if (regionFilter) {
-  regionFilter.addEventListener(
+if (degreeFilter) {
+  degreeFilter.addEventListener(
     "change",
     filterUniversities
   );
 }
 
 
-if (typeFilter) {
-  typeFilter.addEventListener(
+if (strengthFilter) {
+  strengthFilter.addEventListener(
     "change",
     filterUniversities
   );
