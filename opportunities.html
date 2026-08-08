@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Aerospace Opportunities | Aerospace for Students</title>
+
+  <meta
+    name="description"
+    content="Explore aerospace competitions, scholarships and internships for students."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/opportunities.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="container nav-container">
+
+      <a href="index.html" class="logo">
+        Aerospace <span>for Students</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="organizations.html">Organizations</a>
+        <a href="universities.html">Universities</a>
+        <a href="opportunities.html">Opportunities</a>
+        <a href="careers.html">Careers</a>
+        <a href="research.html">Research</a>
+        <a href="about.html">About</a>
+
+        <a href="guidance.html" class="nav-button">
+          Get Free Guidance
+        </a>
+      </nav>
+
+      <button class="menu-button" id="menuButton">
+        ☰
+      </button>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="opportunities-hero">
+      <div class="container">
+
+        <p class="eyebrow">
+          BUILD YOUR EXPERIENCE
+        </p>
+
+        <h1>
+          Aerospace Opportunities for Students
+        </h1>
+
+        <p>
+          Discover competitions, scholarships and internships designed to
+          help students build skills, gain experience and take their next
+          step into aerospace.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- QUICK CATEGORY CARDS -->
+    <section class="opportunity-categories">
+
+      <div class="container">
+
+        <div class="opportunity-category-grid">
+
+          <button class="category-card active-category" data-category="all">
+            <span>All Opportunities</span>
+          </button>
+
+          <button class="category-card" data-category="competition">
+            <span>Competitions</span>
+          </button>
+
+          <button class="category-card" data-category="scholarship">
+            <span>Scholarships</span>
+          </button>
+
+          <button class="category-card" data-category="internship">
+            <span>Internships</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- DIRECTORY -->
+    <section class="opportunities-section">
+
+      <div class="container">
+
+        <div class="opportunity-filters">
+
+          <div class="opportunity-filter-group opportunity-search">
+            <label for="opportunitySearch">
+              Search opportunities
+            </label>
+
+            <input
+              type="text"
+              id="opportunitySearch"
+              placeholder="Search by title, organization or topic..."
+            >
+          </div>
+
+
+          <div class="opportunity-filter-group">
+            <label for="ageFilter">
+              Education Level
+            </label>
+
+            <select id="ageFilter">
+              <option value="all">All Levels</option>
+              <option value="middle-school">Middle School</option>
+              <option value="high-school">High School</option>
+              <option value="undergraduate">Undergraduate</option>
+              <option value="graduate">Graduate</option>
+              <option value="multiple">Multiple Levels</option>
+            </select>
+          </div>
+
+
+          <div class="opportunity-filter-group">
+            <label for="locationFilter">
+              Location
+            </label>
+
+            <select id="locationFilter">
+              <option value="all">All Locations</option>
+              <option value="usa">United States</option>
+              <option value="worldwide">Worldwide</option>
+            </select>
+          </div>
+
+        </div>
+
+
+        <div class="opportunities-heading">
+
+          <div>
+            <p class="eyebrow">
+              OPPORTUNITY DIRECTORY
+            </p>
+
+            <h2>
+              Explore Opportunities
+            </h2>
+          </div>
+
+          <p id="opportunityResultCount">
+            Showing 9 opportunities
+          </p>
+
+        </div>
+
+
+        <div class="opportunities-grid">
+
+
+          <!-- COMPETITION -->
+          <article
+            class="opportunity-card"
+            data-category="competition"
+            data-name="NASA Student Launch rocketry competition United States"
+            data-level="undergraduate"
+            data-location="usa"
+          >
+
+            <div class="opportunity-top">
+              <span class="opportunity-type competition-label">
+                Competition
+              </span>
+
+              <span class="opportunity-location">
+                USA
+              </span>
+            </div>
+
+            <h3>
+              NASA Student Launch
+            </h3>
+
+            <p class="opportunity-organization">
+              NASA
+            </p>
+
+            <p class="opportunity-description">
+              A hands-on engineering competition where student teams design,
+              build and launch high-powered rockets while completing technical
+              milestones.
+            </p>
+
+            <div class="opportunity-tags">
+              <span>Rocketry</span>
+              <span>Engineering</span>
+              <span>Team</span>
+            </div>
+
+            <div class="opportunity-meta">
+              <span>Undergraduate</span>
+              <span>United States</span>
+            </div>
+
+            <a
+              href="https://www.nasa.gov/learning-resources/nasa-student-launch/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="opportunity-link"
+            >
+              View Opportunity →
+            </a>
+
+          </article>
+
+
+          <!-- COMPETITION -->
+          <article
+            class="opportunity-card"
+            data-category="competition"
+            data-name="American Rocketry Challenge high school middle school USA"
+            data-level="multiple"
+            data-location="usa"
+          >
+
+            <div class="opportunity-top">
+              <span class="opportunity-type competition-label">
+                Competition
+              </span>
+
+              <span class="opportunity-location">
+                USA
+              </span>
+            </div>
+
+            <h3>
+              American Rocketry Challenge
+            </h3>
+
+            <p class="opportunity-organization">
+              Aerospace Industries Association
+            </p>
+
+            <p class="opportunity-description">
+              A major U.S. student rocketry competition that challenges teams
+              to design and launch model rockets according to annual mission
+              requirements.
+            </p>
+
+            <div class="opportunity-tags">
+              <span>Rocketry</span>
+              <span>STEM</span>
+              <span>Design</span>
+            </div>
+
+            <div class="opportunity-meta">
+              <span>Middle & High School</span>
+              <span>United States</span>
+            </div>
+
+            <a
+              href="https://rocketcontest.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="opportunity-link"
+            >
+              View Opportunity →
+            </a>
+
+          </article>
+
+
+          <!-- COMPETITION -->
+          <article
+            class="opportunity-card"
+            data-category="competition"
+            data-name="Space Apps Challenge NASA worldwide competition coding"
+            data-level="multiple"
+            data-location="worldwide"
+          >
+
+            <div class="opportunity-top">
+              <span class="opportunity-type competition-label">
+                Competition
+              </span>
+
+              <span class="opportunity-location">
+                Worldwide
+              </span>
+            </div>
+
+            <h3>
+              NASA Space Apps Challenge
+            </h3>
+
+            <p class="opportunity-organization">
+              NASA
+            </p>
+
+            <p class="opportunity-description">
+              A global hackathon where participants use open data to solve
+              challenges related to Earth, space, science and technology.
+            </p>
+
+            <div class="opportunity-tags">
+              <span>Hackathon</span>
+              <span>Space</span>
+              <span>Technology</span>
+            </div>
+
+            <div class="opportunity-meta">
+              <span>Multiple Levels</span>
+              <span>Worldwide</span>
+            </div>
+
+            <a
+              href="https://www.spaceappschallenge.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="opportunity-link"
+            >
+              View Opportunity →
+            </a>
+
+          </article>
+
+
+          <!-- SCHOLARSHIP -->
+          <article
+            class="opportunity-card"
+            data-category="scholarship"
+            data-name="AIAA scholarships aerospace engineering USA undergraduate"
+            data-level="undergraduate"
+            data-location="usa"
+          >
+
+            <div class="opportunity-top">
+              <span class="opportunity-type scholarship-label">
+                Scholarship
+              </span>
+
+              <span class="opportunity-location">
+                USA
+              </span>
+            </div>
+
+            <h3>
+              AIAA Scholarships
+            </h3>
+
+            <p class="opportunity-organization">
+              American Institute of Aeronautics and Astronautics
+            </p>
+
+            <p class="opportunity-description">
+              Scholarship opportunities supporting students pursuing degrees
+              related to aerospace engineering, aeronautics and astronautics.
+            </p>
+
+            <div class="opportunity-tags">
+              <span>Aerospace</span>
+              <span>Engineering</span>
+              <span>Education</span>
+            </div>
+
+            <div class="opportunity-meta">
+              <span>Undergraduate</span>
+              <span>United States</span>
+            </div>
+
+            <a
+              href="https://www.aiaa.org/get-involved/students-educators/scholarships-graduate-awards"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="opportunity-link"
+            >
+              View Opportunity →
+            </a>
+
+          </article>
+
+
+          <!-- SCHOLARSHIP -->
+          <article
+            class="opportunity-card"
+            data-category="scholarship"
+            data-name="Women in Aviation International scholarships aviation aerospace USA"
+            data-level="multiple"
+            data-location="usa"
+          >
+
+            <div class="opportunity-top">
+              <span class="opportunity-type scholarship-label">
+                Scholarship
+              </span>
+
+              <span class="opportunity-location">
+                USA
+              </span>
+            </div>
+
+            <h3>
+              Women in Aviation Scholarships
+            </h3>
+
+            <p class="opportunity-organization">
+              Women in Aviation International
+            </p>
+
+            <p class="opportunity-description">
+              A broad scholarship program supporting students and professionals
+              pursuing education and training across aviation and aerospace.
+            </p>
+
+            <div class="opportunity-tags">
+              <span>Aviation</span>
+              <span>Education</span>
+              <span>Training</span>
+            </div>
+
+            <div class="opportunity-meta">
+              <span>Multiple Levels</span>
+              <span>United States</span>
+            </div>
+
+            <a
+              href="https://www.wai.org/scholarships"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="opportunity-link"
+            >
+              View Opportunity →
+            </a>
+
+          </article>
+
+
+          <!-- SCHOLARSHIP -->
+          <article
+            class="opportunity-card"
+            data-category="scholarship"
+            data-name="Astronaut Scholarship Foundation STEM scholarship USA undergraduate"
+            data-level="undergraduate"
+            data-location="usa"
+          >
+
+            <div class="opportunity-top">
+              <span class="opportunity-type scholarship-label">
+                Scholarship
+              </span>
+
+              <span class="opportunity-location">
+                USA
+              </span>
+            </div>
+
+            <h3>
+              Astronaut Scholarship Foundation
+            </h3>
+
+            <p class="opportunity-organization">
+              Astronaut Scholarship Foundation
+            </p>
+
+            <p class="opportunity-description">
+              Supports high-achieving university students pursuing STEM fields
+              through scholarships, mentorship and professional development.
+            </p>
+
+            <div class="opportunity-tags">
+              <span>STEM</span>
+              <span>Research</span>
+              <span>Leadership</span>
+            </div>
+
+            <div class="opportunity-meta">
+              <span>Undergraduate</span>
+              <span>United States</span>
+            </div>
+
+            <a
+              href="https://astronautscholarship.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="opportunity-link"
+            >
+              View Opportunity →
+            </a>
+
+          </article>
+
+
+          <!-- INTERNSHIP -->
+          <article
+            class="opportunity-card"
+            data-category="internship"
+            data-name="NASA internships students USA aerospace"
+            data-level="multiple"
+            data-location="usa"
+          >
+
+            <div class="opportunity-top">
+              <span class="opportunity-type internship-label">
+                Internship
+              </span>
+
+              <span class="opportunity-location">
+                USA
+              </span>
+            </div>
+
+            <h3>
+              NASA Internships
+            </h3>
+
+            <p class="opportunity-organization">
+              NASA
+            </p>
+
+            <p class="opportunity-description">
+              Student internship opportunities across NASA centers in areas
+              including engineering, science, technology, operations and research.
+            </p>
+
+            <div class="opportunity-tags">
+              <span>Engineering</span>
+              <span>Science</span>
+              <span>Research</span>
+            </div>
+
+            <div class="opportunity-meta">
+              <span>Multiple Levels</span>
+              <span>United States</span>
+            </div>
+
+            <a
+              href="https://www.nasa.gov/learning-resources/internship-programs/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="opportunity-link"
+            >
+              View Opportunity →
+            </a>
+
+          </article>
+
+
+          <!-- INTERNSHIP -->
+          <article
+            class="opportunity-card"
+            data-category="internship"
+            data-name="Boeing internships aerospace engineering students USA"
+            data-level="undergraduate"
+            data-location="usa"
+          >
+
+            <div class="opportunity-top">
+              <span class="opportunity-type internship-label">
+                Internship
+              </span>
+
+              <span class="opportunity-location">
+                USA
+              </span>
+            </div>
+
+            <h3>
+              Boeing Student Programs
+            </h3>
+
+            <p class="opportunity-organization">
+              Boeing
+            </p>
+
+            <p class="opportunity-description">
+              Internship and early-career opportunities in engineering,
+              manufacturing, technology, business and aerospace operations.
+            </p>
+
+            <div class="opportunity-tags">
+              <span>Engineering</span>
+              <span>Aviation</span>
+              <span>Industry</span>
+            </div>
+
+            <div class="opportunity-meta">
+              <span>Undergraduate</span>
+              <span>United States</span>
+            </div>
+
+            <a
+              href="https://jobs.boeing.com/entry-level"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="opportunity-link"
+            >
+              View Opportunity →
+            </a>
+
+          </article>
+
+
+          <!-- INTERNSHIP -->
+          <article
+            class="opportunity-card"
+            data-category="internship"
+            data-name="Airbus internships aerospace students worldwide"
+            data-level="undergraduate"
+            data-location="worldwide"
+          >
+
+            <div class="opportunity-top">
+              <span class="opportunity-type internship-label">
+                Internship
+              </span>
+
+              <span class="opportunity-location">
+                Worldwide
+              </span>
+            </div>
+
+            <h3>
+              Airbus Internships
+            </h3>
+
+            <p class="opportunity-organization">
+              Airbus
+            </p>
+
+            <p class="opportunity-description">
+              Internship and graduate opportunities across aerospace
+              engineering, digital technology, manufacturing and business.
+            </p>
+
+            <div class="opportunity-tags">
+              <span>Aviation</span>
+              <span>Engineering</span>
+              <span>Industry</span>
+            </div>
+
+            <div class="opportunity-meta">
+              <span>Undergraduate</span>
+              <span>Worldwide</span>
+            </div>
+
+            <a
+              href="https://www.airbus.com/en/careers/students-and-graduates"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="opportunity-link"
+            >
+              View Opportunity →
+            </a>
+
+          </article>
+
+        </div>
+
+
+        <div class="opportunity-empty-state" id="opportunityEmptyState">
+
+          <h3>
+            No opportunities found
+          </h3>
+
+          <p>
+            Try changing your search or filters.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <div class="container footer-content">
+
+      <div>
+        <h3>
+          Aerospace for Students
+        </h3>
+
+        <p>
+          Helping the next generation discover their path into aerospace.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="universities.html">Universities</a>
+        <a href="careers.html">Careers</a>
+        <a href="guidance.html">Guidance</a>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      © 2026 Aerospace for Students
+    </div>
+
+  </footer>
+
+
+  <script src="js/script.js"></script>
+  <script src="js/opportunities.js"></script>
+
+</body>
+</html>
