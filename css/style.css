@@ -815,3 +815,369 @@ footer {
   }
 
 }
+/* =========================
+   DIRECTORY PAGE
+========================= */
+
+.directory-hero {
+  padding: 165px 0 80px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #07182e 0%,
+      #0b2342 100%
+    );
+
+  color: #ffffff;
+}
+
+.directory-hero h1 {
+  max-width: 850px;
+
+  margin-bottom: 20px;
+
+  font-size: clamp(46px, 6vw, 72px);
+
+  line-height: 1.05;
+
+  letter-spacing: -2px;
+}
+
+.directory-hero > .container > p:last-child {
+  max-width: 760px;
+
+  color: #b3c4d9;
+
+  font-size: 18px;
+
+  line-height: 1.7;
+}
+
+
+.directory-section {
+  padding: 70px 0 100px;
+}
+
+
+.filter-panel {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 1fr;
+
+  gap: 18px;
+
+  margin-bottom: 65px;
+
+  padding: 24px;
+
+  background: #f5f8fc;
+
+  border: 1px solid #e0e7f0;
+
+  border-radius: 14px;
+}
+
+
+.filter-group {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+
+.filter-group label {
+  color: #243752;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+
+.filter-group input,
+.filter-group select {
+  width: 100%;
+
+  min-height: 48px;
+
+  padding: 0 14px;
+
+  border: 1px solid #ccd7e5;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #1a2c45;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 14px;
+}
+
+
+.filter-group input:focus,
+.filter-group select:focus {
+  outline: 2px solid #9fc4ff;
+
+  border-color: #659df1;
+}
+
+
+.directory-heading {
+  display: flex;
+
+  align-items: end;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-bottom: 34px;
+}
+
+
+.directory-heading h2 {
+  color: #102440;
+
+  font-size: 42px;
+
+  line-height: 1.15;
+}
+
+
+.directory-heading > p {
+  color: #7a879a;
+
+  font-size: 14px;
+}
+
+
+.university-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 22px;
+}
+
+
+.university-card {
+  display: flex;
+
+  flex-direction: column;
+
+  min-height: 360px;
+
+  padding: 30px;
+
+  background: #ffffff;
+
+  border: 1px solid #e1e7ef;
+
+  border-radius: 14px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+.university-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #c4d9fb;
+
+  box-shadow: 0 16px 36px rgba(15, 35, 64, 0.08);
+}
+
+
+.university-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 24px;
+}
+
+
+.school-type,
+.country-label {
+  display: inline-flex;
+
+  align-items: center;
+
+  min-height: 28px;
+
+  padding: 5px 10px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+
+.school-type {
+  background: #edf4ff;
+
+  color: #3475d5;
+}
+
+
+.country-label {
+  background: #f2f4f7;
+
+  color: #5c6879;
+}
+
+
+.university-card h3 {
+  margin-bottom: 8px;
+
+  color: #102440;
+
+  font-size: 23px;
+
+  line-height: 1.3;
+}
+
+
+.school-location {
+  margin-bottom: 18px;
+
+  color: #718096;
+
+  font-size: 14px;
+}
+
+
+.school-description {
+  margin-bottom: 22px;
+
+  color: #647287;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+.tag-list {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-bottom: 28px;
+}
+
+
+.tag-list span {
+  padding: 6px 10px;
+
+  background: #f5f7fa;
+
+  border: 1px solid #e5eaf0;
+
+  border-radius: 999px;
+
+  color: #526177;
+
+  font-size: 12px;
+}
+
+
+.school-link {
+  margin-top: auto;
+
+  color: #3379e7;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+
+.school-link:hover {
+  color: #245eaf;
+}
+
+
+.empty-state {
+  display: none;
+
+  padding: 60px 20px;
+
+  text-align: center;
+}
+
+
+.empty-state h3 {
+  margin-bottom: 8px;
+
+  color: #102440;
+
+  font-size: 25px;
+}
+
+
+.empty-state p {
+  color: #738197;
+}
+
+
+/* DIRECTORY RESPONSIVE */
+
+@media (max-width: 850px) {
+
+  .directory-hero {
+    padding: 140px 0 70px;
+  }
+
+  .filter-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .university-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .directory-hero h1 {
+    font-size: 44px;
+  }
+
+  .directory-heading {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 8px;
+  }
+
+  .directory-heading h2 {
+    font-size: 36px;
+  }
+
+  .university-card {
+    min-height: auto;
+
+    padding: 25px;
+  }
+
+}

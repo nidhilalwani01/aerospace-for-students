@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Aerospace Universities | Aerospace for Students</title>
+
+  <meta
+    name="description"
+    content="Explore leading aerospace engineering universities around the world, including public and private schools in the United States."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="container nav-container">
+
+      <a href="index.html" class="logo">
+        Aerospace <span>for Students</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="organizations.html">Organizations</a>
+        <a href="universities.html">Universities</a>
+        <a href="opportunities.html">Opportunities</a>
+        <a href="careers.html">Careers</a>
+        <a href="research.html">Research</a>
+        <a href="about.html">About</a>
+
+        <a href="guidance.html" class="nav-button">
+          Get Free Guidance
+        </a>
+      </nav>
+
+      <button class="menu-button" id="menuButton">
+        ☰
+      </button>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="directory-hero">
+      <div class="container">
+
+        <p class="eyebrow">
+          AEROSPACE EDUCATION
+        </p>
+
+        <h1>
+          Find the Right Aerospace University
+        </h1>
+
+        <p>
+          Explore leading aerospace engineering programs around the world
+          and compare schools based on location, type, degree options and
+          academic strengths.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- FILTERS -->
+    <section class="directory-section">
+
+      <div class="container">
+
+        <div class="filter-panel">
+
+          <div class="filter-group search-group">
+
+            <label for="schoolSearch">
+              Search universities
+            </label>
+
+            <input
+              type="text"
+              id="schoolSearch"
+              placeholder="Search by university, country or city..."
+            >
+
+          </div>
+
+
+          <div class="filter-group">
+
+            <label for="regionFilter">
+              Region
+            </label>
+
+            <select id="regionFilter">
+              <option value="all">All Regions</option>
+              <option value="usa">United States</option>
+              <option value="international">International</option>
+            </select>
+
+          </div>
+
+
+          <div class="filter-group">
+
+            <label for="typeFilter">
+              School Type
+            </label>
+
+            <select id="typeFilter">
+              <option value="all">All Types</option>
+              <option value="public">Public</option>
+              <option value="private">Private</option>
+            </select>
+
+          </div>
+
+        </div>
+
+
+        <div class="directory-heading">
+
+          <div>
+            <p class="eyebrow">UNIVERSITY DIRECTORY</p>
+
+            <h2>
+              Aerospace Programs
+            </h2>
+          </div>
+
+          <p id="resultCount">
+            Showing 8 universities
+          </p>
+
+        </div>
+
+
+        <div class="university-grid" id="universityGrid">
+
+          <!-- MIT -->
+          <article
+            class="university-card"
+            data-name="Massachusetts Institute of Technology MIT Cambridge USA"
+            data-region="usa"
+            data-type="private"
+          >
+
+            <div class="university-top">
+
+              <span class="school-type">
+                Private
+              </span>
+
+              <span class="country-label">
+                USA
+              </span>
+
+            </div>
+
+            <h3>
+              Massachusetts Institute of Technology
+            </h3>
+
+            <p class="school-location">
+              Cambridge, Massachusetts
+            </p>
+
+            <p class="school-description">
+              Known worldwide for advanced aerospace research, engineering,
+              propulsion, autonomous systems and space technology.
+            </p>
+
+            <div class="tag-list">
+              <span>Aeronautics</span>
+              <span>Astronautics</span>
+              <span>Research</span>
+            </div>
+
+            <a
+              href="https://aeroastro.mit.edu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="school-link"
+            >
+              Visit Program →
+            </a>
+
+          </article>
+
+
+          <!-- Georgia Tech -->
+          <article
+            class="university-card"
+            data-name="Georgia Institute of Technology Georgia Tech Atlanta USA"
+            data-region="usa"
+            data-type="public"
+          >
+
+            <div class="university-top">
+
+              <span class="school-type">
+                Public
+              </span>
+
+              <span class="country-label">
+                USA
+              </span>
+
+            </div>
+
+            <h3>
+              Georgia Institute of Technology
+            </h3>
+
+            <p class="school-location">
+              Atlanta, Georgia
+            </p>
+
+            <p class="school-description">
+              A major aerospace engineering program with strong work in
+              aerodynamics, propulsion, flight mechanics and space systems.
+            </p>
+
+            <div class="tag-list">
+              <span>Propulsion</span>
+              <span>Flight</span>
+              <span>Space Systems</span>
+            </div>
+
+            <a
+              href="https://ae.gatech.edu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="school-link"
+            >
+              Visit Program →
+            </a>
+
+          </article>
+
+
+          <!-- Purdue -->
+          <article
+            class="university-card"
+            data-name="Purdue University West Lafayette Indiana USA"
+            data-region="usa"
+            data-type="public"
+          >
+
+            <div class="university-top">
+
+              <span class="school-type">
+                Public
+              </span>
+
+              <span class="country-label">
+                USA
+              </span>
+
+            </div>
+
+            <h3>
+              Purdue University
+            </h3>
+
+            <p class="school-location">
+              West Lafayette, Indiana
+            </p>
+
+            <p class="school-description">
+              A historic aerospace program known for astronaut alumni,
+              propulsion research, aircraft design and space exploration.
+            </p>
+
+            <div class="tag-list">
+              <span>Space</span>
+              <span>Propulsion</span>
+              <span>Aircraft Design</span>
+            </div>
+
+            <a
+              href="https://engineering.purdue.edu/AAE"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="school-link"
+            >
+              Visit Program →
+            </a>
+
+          </article>
+
+
+          <!-- Texas A&M -->
+          <article
+            class="university-card"
+            data-name="Texas A&M University College Station Texas USA"
+            data-region="usa"
+            data-type="public"
+          >
+
+            <div class="university-top">
+
+              <span class="school-type">
+                Public
+              </span>
+
+              <span class="country-label">
+                USA
+              </span>
+
+            </div>
+
+            <h3>
+              Texas A&amp;M University
+            </h3>
+
+            <p class="school-location">
+              College Station, Texas
+            </p>
+
+            <p class="school-description">
+              Offers extensive aerospace engineering education and research
+              across aerodynamics, structures, propulsion and space systems.
+            </p>
+
+            <div class="tag-list">
+              <span>Aerodynamics</span>
+              <span>Structures</span>
+              <span>Space</span>
+            </div>
+
+            <a
+              href="https://engineering.tamu.edu/aerospace/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="school-link"
+            >
+              Visit Program →
+            </a>
+
+          </article>
+
+
+          <!-- Stanford -->
+          <article
+            class="university-card"
+            data-name="Stanford University Stanford California USA"
+            data-region="usa"
+            data-type="private"
+          >
+
+            <div class="university-top">
+
+              <span class="school-type">
+                Private
+              </span>
+
+              <span class="country-label">
+                USA
+              </span>
+
+            </div>
+
+            <h3>
+              Stanford University
+            </h3>
+
+            <p class="school-location">
+              Stanford, California
+            </p>
+
+            <p class="school-description">
+              Strong in aeronautics, autonomous systems, spacecraft,
+              computational engineering and interdisciplinary research.
+            </p>
+
+            <div class="tag-list">
+              <span>Autonomy</span>
+              <span>Spacecraft</span>
+              <span>Computation</span>
+            </div>
+
+            <a
+              href="https://aa.stanford.edu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="school-link"
+            >
+              Visit Program →
+            </a>
+
+          </article>
+
+
+          <!-- Caltech -->
+          <article
+            class="university-card"
+            data-name="California Institute of Technology Caltech Pasadena California USA"
+            data-region="usa"
+            data-type="private"
+          >
+
+            <div class="university-top">
+
+              <span class="school-type">
+                Private
+              </span>
+
+              <span class="country-label">
+                USA
+              </span>
+
+            </div>
+
+            <h3>
+              California Institute of Technology
+            </h3>
+
+            <p class="school-location">
+              Pasadena, California
+            </p>
+
+            <p class="school-description">
+              A research-intensive institution with strengths in space
+              science, fluid mechanics, propulsion and spacecraft systems.
+            </p>
+
+            <div class="tag-list">
+              <span>Space Science</span>
+              <span>Fluid Mechanics</span>
+              <span>Research</span>
+            </div>
+
+            <a
+              href="https://galcit.caltech.edu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="school-link"
+            >
+              Visit Program →
+            </a>
+
+          </article>
+
+
+          <!-- TU Delft -->
+          <article
+            class="university-card"
+            data-name="Delft University of Technology TU Delft Netherlands Europe"
+            data-region="international"
+            data-type="public"
+          >
+
+            <div class="university-top">
+
+              <span class="school-type">
+                Public
+              </span>
+
+              <span class="country-label">
+                Netherlands
+              </span>
+
+            </div>
+
+            <h3>
+              Delft University of Technology
+            </h3>
+
+            <p class="school-location">
+              Delft, Netherlands
+            </p>
+
+            <p class="school-description">
+              One of Europe's major aerospace programs with work in
+              aerodynamics, aircraft design, spaceflight and sustainability.
+            </p>
+
+            <div class="tag-list">
+              <span>Aircraft</span>
+              <span>Spaceflight</span>
+              <span>Sustainability</span>
+            </div>
+
+            <a
+              href="https://www.tudelft.nl/en/ae"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="school-link"
+            >
+              Visit Program →
+            </a>
+
+          </article>
+
+
+          <!-- Imperial -->
+          <article
+            class="university-card"
+            data-name="Imperial College London United Kingdom UK Aerospace"
+            data-region="international"
+            data-type="public"
+          >
+
+            <div class="university-top">
+
+              <span class="school-type">
+                Public
+              </span>
+
+              <span class="country-label">
+                UK
+              </span>
+
+            </div>
+
+            <h3>
+              Imperial College London
+            </h3>
+
+            <p class="school-location">
+              London, United Kingdom
+            </p>
+
+            <p class="school-description">
+              Offers advanced aeronautical engineering education with
+              strengths in fluid mechanics, structures, control and flight.
+            </p>
+
+            <div class="tag-list">
+              <span>Flight</span>
+              <span>Structures</span>
+              <span>Fluid Mechanics</span>
+            </div>
+
+            <a
+              href="https://www.imperial.ac.uk/aeronautics/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="school-link"
+            >
+              Visit Program →
+            </a>
+
+          </article>
+
+        </div>
+
+
+        <div class="empty-state" id="emptyState">
+          <h3>No universities found</h3>
+
+          <p>
+            Try changing your search or filter selections.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <div class="container footer-content">
+
+      <div>
+        <h3>
+          Aerospace for Students
+        </h3>
+
+        <p>
+          Helping the next generation discover their path into aerospace.
+        </p>
+      </div>
+
+
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="universities.html">Universities</a>
+        <a href="careers.html">Careers</a>
+        <a href="guidance.html">Guidance</a>
+      </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+      © 2026 Aerospace for Students
+    </div>
+
+  </footer>
+
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
