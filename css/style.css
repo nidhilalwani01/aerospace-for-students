@@ -69,15 +69,33 @@ img {
 }
 
 .logo {
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 21px;
-  font-weight: 700;
-  color: #ffffff;
-  white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    text-decoration: none;
 }
 
-.logo span {
-  color: #6ea8ff;
+.logo img {
+    width: 42px;
+    height: 42px;
+
+    object-fit: contain;
+    display: block;
+}
+
+.logo-name {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+
+    color: white;
+
+    line-height: 1.1;
+}
+
+.logo-name strong {
+    color: #6ea8ff;
 }
 
 .nav-links {
