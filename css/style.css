@@ -40,7 +40,6 @@ img {
   margin: 0 auto;
 }
 
-
 /* =========================
    NAVIGATION
 ========================= */
@@ -256,7 +255,40 @@ img {
   margin-top: 34px;
 }
 
+/* =========================
+   CLICK / LAYER FIX
+========================= */
 
+.hero-overlay {
+  pointer-events: none;
+}
+
+.hero::after {
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.navbar {
+  z-index: 9999;
+}
+
+.nav-container {
+  position: relative;
+}
+
+.menu-button {
+  position: relative;
+  z-index: 10001;
+  cursor: pointer;
+}
+
+.nav-links {
+  z-index: 10000;
+}
 /* =========================
    BUTTONS
 ========================= */
