@@ -7,6 +7,9 @@ const researchLevelFilter =
 const researchTypeFilter =
   document.getElementById("researchTypeFilter");
 
+const researchAreaFilter =
+  document.getElementById("researchAreaFilter");
+
 const researchCards =
   document.querySelectorAll(".research-opportunity-card");
 
@@ -34,38 +37,54 @@ function filterResearch() {
       ? researchTypeFilter.value
       : "all";
 
+  const areaValue =
+    researchAreaFilter
+      ? researchAreaFilter.value
+      : "all";
+
   let visibleCount = 0;
 
 
   researchCards.forEach((card) => {
 
-    const name =
-      card.dataset.name.toLowerCase();
+    const searchableText =
+      (card.dataset.name || "").toLowerCase();
 
-    const level =
-      card.dataset.level;
+    const levels =
+      (card.dataset.levels || "")
+        .split(" ");
 
     const type =
-      card.dataset.type;
+      card.dataset.type || "";
+
+    const areas =
+      (card.dataset.areas || "")
+        .split(" ");
 
 
     const matchesSearch =
-      name.includes(searchValue);
+      searchableText.includes(
+        searchValue
+      );
 
     const matchesLevel =
       levelValue === "all" ||
-      level === levelValue ||
-      level === "multiple";
+      levels.includes(levelValue);
 
     const matchesType =
       typeValue === "all" ||
       type === typeValue;
 
+    const matchesArea =
+      areaValue === "all" ||
+      areas.includes(areaValue);
+
 
     if (
       matchesSearch &&
       matchesLevel &&
-      matchesType
+      matchesType &&
+      matchesArea
     ) {
 
       card.style.display = "flex";
@@ -106,26 +125,42 @@ function filterResearch() {
 
 
 if (researchSearch) {
+
   researchSearch.addEventListener(
     "input",
     filterResearch
   );
+
 }
 
 
 if (researchLevelFilter) {
+
   researchLevelFilter.addEventListener(
     "change",
     filterResearch
   );
+
 }
 
 
 if (researchTypeFilter) {
+
   researchTypeFilter.addEventListener(
     "change",
     filterResearch
   );
+
+}
+
+
+if (researchAreaFilter) {
+
+  researchAreaFilter.addEventListener(
+    "change",
+    filterResearch
+  );
+
 }
 
 

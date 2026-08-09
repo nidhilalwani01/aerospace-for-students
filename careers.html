@@ -1,99 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Aerospace Careers | Aerospace for Students</title>
-  <link rel="icon" type="image/png" href="images/favicon/favicon.png">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Aerospace Careers | Aerospace for Students
+  </title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="images/favicon/favicon.png"
+  >
 
   <meta
     name="description"
-    content="Explore aerospace careers, education requirements, salary ranges and areas of work."
+    content="Explore aerospace careers, education pathways, skills, sectors and U.S. compensation benchmarks."
   >
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
 
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/careers.css">
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/careers.css"
+  >
+
 </head>
+
+
 
 <body>
 
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+
   <header class="navbar">
+
     <div class="container nav-container">
 
-      <a href="index.html" class="logo">
-  <img
-    src="images/logo/logo-white.png"
-    alt="Aerospace for Students"
-  >
 
-  <span class="logo-name">
-    Aerospace <strong>for Students</strong>
-  </span>
-</a>
+      <a
+        href="index.html"
+        class="logo"
+      >
+
+        <img
+          src="images/logo/logo-white.png"
+          alt="Aerospace for Students"
+        >
+
+        <span class="logo-name">
+          Aerospace <strong>for Students</strong>
+        </span>
+
+      </a>
+
+
 
       <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="organizations.html">Organizations</a>
-        <a href="universities.html">Universities</a>
-        <a href="opportunities.html">Opportunities</a>
-        <a href="careers.html" class="active-page">Careers</a>
-        <a href="research.html">Research</a>
-        <a href="about.html">About</a>
 
-        <a href="guidance.html" class="nav-button">
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="organizations.html">
+          Organizations
+        </a>
+
+        <a href="universities.html">
+          Universities
+        </a>
+
+        <a href="opportunities.html">
+          Opportunities
+        </a>
+
+        <a
+          href="careers.html"
+          class="active-page"
+        >
+          Careers
+        </a>
+
+        <a href="research.html">
+          Research
+        </a>
+
+        <a href="about.html">
+          About
+        </a>
+
+        <a
+          href="guidance.html"
+          class="nav-button"
+        >
           Get Free Guidance
         </a>
+
       </nav>
 
-      <button class="menu-button" id="menuButton">
+
+
+      <button
+        class="menu-button"
+        id="menuButton"
+        type="button"
+        aria-label="Open navigation menu"
+      >
         ☰
       </button>
 
+
     </div>
+
   </header>
+
 
 
   <main>
 
-    <!-- HERO -->
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
     <section class="careers-hero">
+
       <div class="container">
+
 
         <p class="eyebrow">
           BUILD YOUR FUTURE
         </p>
 
+
         <h1>
-          Explore Careers in Aerospace
+          Explore Careers
+          Across Aerospace
         </h1>
 
+
         <p>
-          Discover what different aerospace professionals do, what education
-          they typically need and how career paths vary across engineering,
-          technology, research, operations and business.
+          Aerospace is much bigger than aircraft design.
+          Explore careers across engineering, software,
+          science, space operations, manufacturing,
+          flight and business — and understand the
+          education and skills that can help you get there.
         </p>
 
+
+
+        <div class="careers-meta">
+
+          <span>
+            20+ career paths
+          </span>
+
+          <span>
+            Multiple aerospace sectors
+          </span>
+
+          <span>
+            U.S. compensation benchmarks
+          </span>
+
+          <span>
+            BLS-based career data
+          </span>
+
+        </div>
+
+
       </div>
+
     </section>
 
 
-    <!-- FILTERS -->
+
+    <!-- =========================
+         CAREER AREAS
+    ========================== -->
+
+    <section class="career-area-section">
+
+      <div class="container">
+
+
+        <div class="career-area-tabs">
+
+
+          <button
+            type="button"
+            class="career-area-tab active-career-tab"
+            data-career-category="all"
+          >
+            All Careers
+          </button>
+
+
+          <button
+            type="button"
+            class="career-area-tab"
+            data-career-category="engineering"
+          >
+            Engineering
+          </button>
+
+
+          <button
+            type="button"
+            class="career-area-tab"
+            data-career-category="software"
+          >
+            Software & Technology
+          </button>
+
+
+          <button
+            type="button"
+            class="career-area-tab"
+            data-career-category="science"
+          >
+            Science & Research
+          </button>
+
+
+          <button
+            type="button"
+            class="career-area-tab"
+            data-career-category="operations"
+          >
+            Flight & Operations
+          </button>
+
+
+          <button
+            type="button"
+            class="career-area-tab"
+            data-career-category="technical"
+          >
+            Manufacturing & Technical
+          </button>
+
+
+          <button
+            type="button"
+            class="career-area-tab"
+            data-career-category="business"
+          >
+            Business & Management
+          </button>
+
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CAREER DIRECTORY
+    ========================== -->
+
     <section class="career-section">
 
       <div class="container">
 
+
+
+        <!-- =========================
+             INTRO
+        ========================== -->
+
+        <div class="careers-intro">
+
+
+          <div>
+
+            <p class="eyebrow">
+              CAREER EXPLORER
+            </p>
+
+            <h2>
+              There is more than one
+              way into aerospace.
+            </h2>
+
+          </div>
+
+
+
+          <p>
+            Aerospace organizations need people with
+            backgrounds in mechanical engineering,
+            electronics, software, physics, data,
+            manufacturing, operations, project management
+            and many other fields. Use the filters below
+            to explore careers that match your interests
+            and education goals.
+          </p>
+
+
+        </div>
+
+
+
+        <!-- =========================
+             FILTERS
+        ========================== -->
+
         <div class="career-filters">
 
-          <div class="career-filter-group career-search">
+
+          <div
+            class="
+              career-filter-group
+              career-search
+            "
+          >
+
             <label for="careerSearch">
               Search careers
             </label>
@@ -101,532 +359,358 @@
             <input
               type="text"
               id="careerSearch"
-              placeholder="Search by role or specialty..."
+              placeholder="Search role, skill or specialty..."
             >
+
           </div>
 
 
+
           <div class="career-filter-group">
+
             <label for="careerCategoryFilter">
               Career Area
             </label>
 
             <select id="careerCategoryFilter">
-              <option value="all">All Areas</option>
-              <option value="engineering">Engineering</option>
-              <option value="software">Software & Technology</option>
-              <option value="research">Research & Science</option>
-              <option value="operations">Operations</option>
-              <option value="business">Business & Strategy</option>
+
+              <option value="all">
+                All Areas
+              </option>
+
+              <option value="engineering">
+                Engineering
+              </option>
+
+              <option value="software">
+                Software & Technology
+              </option>
+
+              <option value="science">
+                Science & Research
+              </option>
+
+              <option value="operations">
+                Flight & Operations
+              </option>
+
+              <option value="technical">
+                Manufacturing & Technical
+              </option>
+
+              <option value="business">
+                Business & Management
+              </option>
+
             </select>
+
           </div>
 
 
+
           <div class="career-filter-group">
+
             <label for="degreeFilter">
               Typical Education
             </label>
 
             <select id="degreeFilter">
-              <option value="all">All Education Levels</option>
-              <option value="bachelors">Bachelor's</option>
-              <option value="masters">Master's</option>
-              <option value="graduate">Graduate / PhD</option>
+
+              <option value="all">
+                All Education Levels
+              </option>
+
+              <option value="associate">
+                Associate / Technical
+              </option>
+
+              <option value="bachelors">
+                Bachelor's
+              </option>
+
+              <option value="masters">
+                Master's
+              </option>
+
+              <option value="phd">
+                Ph.D. / Doctoral
+              </option>
+
             </select>
+
           </div>
+
+
+
+          <div class="career-filter-group">
+
+            <label for="sectorFilter">
+              Aerospace Sector
+            </label>
+
+            <select id="sectorFilter">
+
+              <option value="all">
+                All Sectors
+              </option>
+
+              <option value="aviation">
+                Aviation
+              </option>
+
+              <option value="space">
+                Space
+              </option>
+
+              <option value="launch">
+                Launch & Propulsion
+              </option>
+
+              <option value="satellites">
+                Satellites
+              </option>
+
+              <option value="defense">
+                Defense Aerospace
+              </option>
+
+              <option value="research">
+                Research
+              </option>
+
+              <option value="manufacturing">
+                Manufacturing
+              </option>
+
+            </select>
+
+          </div>
+
 
         </div>
 
+
+
+        <!-- =========================
+             DIRECTORY HEADING
+        ========================== -->
 
         <div class="careers-heading">
 
+
           <div>
+
             <p class="eyebrow">
-              CAREER EXPLORER
+              AEROSPACE CAREERS
+            </p>
+
+            <h2 id="careerDirectoryTitle">
+              Explore Career Paths
+            </h2>
+
+          </div>
+
+
+          <p id="careerResultCount">
+            Loading careers...
+          </p>
+
+
+        </div>
+
+
+
+        <!-- =========================
+             CAREER GRID
+
+             Cards are generated by
+             careers.js
+        ========================== -->
+
+        <div
+          class="careers-grid"
+          id="careersGrid"
+        >
+        </div>
+
+
+
+        <!-- =========================
+             EMPTY STATE
+        ========================== -->
+
+        <div
+          class="career-empty-state"
+          id="careerEmptyState"
+        >
+
+          <h3>
+            No careers found
+          </h3>
+
+          <p>
+            Try changing your search or filter selections.
+          </p>
+
+        </div>
+
+
+
+        <!-- =========================
+             COMPENSATION NOTE
+        ========================== -->
+
+        <div class="career-data-note">
+
+
+          <div class="career-data-note-icon">
+            $
+          </div>
+
+
+          <div>
+
+            <strong>
+              About compensation data
+            </strong>
+
+            <p>
+              Compensation figures shown in this directory
+              are U.S. occupational benchmarks, not guaranteed
+              starting salaries. Aerospace job titles do not
+              always correspond directly to one government
+              occupation category, so some specialized roles
+              use the closest relevant U.S. Bureau of Labor
+              Statistics occupation as a benchmark.
+            </p>
+
+            <p>
+              Actual compensation varies by employer,
+              experience, specialization, geographic
+              location, security clearance, education
+              and level of responsibility.
+            </p>
+
+          </div>
+
+
+        </div>
+
+
+
+        <!-- =========================
+             CAREER EXPLORATION HELP
+        ========================== -->
+
+        <div class="career-help-section">
+
+
+          <div>
+
+            <p class="eyebrow">
+              NOT SURE WHERE TO START?
             </p>
 
             <h2>
-              Aerospace Career Paths
+              You do not need to choose
+              your career today.
             </h2>
+
+            <p>
+              Start by exploring the work that sounds
+              interesting to you. Look at the skills,
+              education and sectors connected to each
+              career, then use those patterns to decide
+              what you may want to learn next.
+            </p>
+
           </div>
 
-          <p id="careerResultCount">
-            Showing 10 careers
-          </p>
+
+          <a
+            href="guidance.html"
+            class="button primary"
+          >
+            Get Free Guidance
+          </a>
+
 
         </div>
 
-
-        <div class="careers-grid">
-
-
-          <article
-            class="career-card"
-            data-name="Aerospace Engineer aircraft spacecraft engineering"
-            data-category="engineering"
-            data-degree="bachelors"
-          >
-
-            <div class="career-top">
-              <span class="career-area">Engineering</span>
-              <span class="career-degree">Bachelor's+</span>
-            </div>
-
-            <h3>
-              Aerospace Engineer
-            </h3>
-
-            <p class="career-description">
-              Designs, develops and tests aircraft, spacecraft, satellites
-              and related aerospace systems.
-            </p>
-
-            <div class="career-details">
-              <div>
-                <span class="detail-label">Typical Work</span>
-                <strong>Aircraft & spacecraft design</strong>
-              </div>
-
-              <div>
-                <span class="detail-label">Salary Range</span>
-                <strong>$80K–$150K+</strong>
-              </div>
-            </div>
-
-            <div class="career-tags">
-              <span>Design</span>
-              <span>Testing</span>
-              <span>Systems</span>
-            </div>
-
-          </article>
-
-
-          <article
-            class="career-card"
-            data-name="Propulsion Engineer rocket engines jet engines propulsion"
-            data-category="engineering"
-            data-degree="bachelors"
-          >
-
-            <div class="career-top">
-              <span class="career-area">Engineering</span>
-              <span class="career-degree">Bachelor's+</span>
-            </div>
-
-            <h3>
-              Propulsion Engineer
-            </h3>
-
-            <p class="career-description">
-              Works on rocket engines, jet engines and propulsion systems
-              used to generate thrust for aircraft and spacecraft.
-            </p>
-
-            <div class="career-details">
-              <div>
-                <span class="detail-label">Typical Work</span>
-                <strong>Engines & propulsion systems</strong>
-              </div>
-
-              <div>
-                <span class="detail-label">Salary Range</span>
-                <strong>$90K–$160K+</strong>
-              </div>
-            </div>
-
-            <div class="career-tags">
-              <span>Rocket Engines</span>
-              <span>Thermodynamics</span>
-              <span>Testing</span>
-            </div>
-
-          </article>
-
-
-          <article
-            class="career-card"
-            data-name="Avionics Engineer electronics navigation communication aircraft spacecraft"
-            data-category="engineering"
-            data-degree="bachelors"
-          >
-
-            <div class="career-top">
-              <span class="career-area">Engineering</span>
-              <span class="career-degree">Bachelor's+</span>
-            </div>
-
-            <h3>
-              Avionics Engineer
-            </h3>
-
-            <p class="career-description">
-              Develops electronic systems used for communication,
-              navigation, control and instrumentation in aerospace vehicles.
-            </p>
-
-            <div class="career-details">
-              <div>
-                <span class="detail-label">Typical Work</span>
-                <strong>Electronics & flight systems</strong>
-              </div>
-
-              <div>
-                <span class="detail-label">Salary Range</span>
-                <strong>$85K–$145K+</strong>
-              </div>
-            </div>
-
-            <div class="career-tags">
-              <span>Electronics</span>
-              <span>Navigation</span>
-              <span>Controls</span>
-            </div>
-
-          </article>
-
-
-          <article
-            class="career-card"
-            data-name="Guidance Navigation Controls Engineer GNC spacecraft flight controls"
-            data-category="engineering"
-            data-degree="masters"
-          >
-
-            <div class="career-top">
-              <span class="career-area">Engineering</span>
-              <span class="career-degree">Master's Often Preferred</span>
-            </div>
-
-            <h3>
-              GNC Engineer
-            </h3>
-
-            <p class="career-description">
-              Develops systems that help aircraft and spacecraft determine
-              position, orientation and movement.
-            </p>
-
-            <div class="career-details">
-              <div>
-                <span class="detail-label">Typical Work</span>
-                <strong>Navigation & control systems</strong>
-              </div>
-
-              <div>
-                <span class="detail-label">Salary Range</span>
-                <strong>$100K–$170K+</strong>
-              </div>
-            </div>
-
-            <div class="career-tags">
-              <span>Controls</span>
-              <span>Navigation</span>
-              <span>Simulation</span>
-            </div>
-
-          </article>
-
-
-          <article
-            class="career-card"
-            data-name="Aerospace Software Engineer flight software embedded systems spacecraft"
-            data-category="software"
-            data-degree="bachelors"
-          >
-
-            <div class="career-top">
-              <span class="career-area">Software & Technology</span>
-              <span class="career-degree">Bachelor's+</span>
-            </div>
-
-            <h3>
-              Aerospace Software Engineer
-            </h3>
-
-            <p class="career-description">
-              Builds software for flight computers, spacecraft, simulation,
-              mission systems and aerospace applications.
-            </p>
-
-            <div class="career-details">
-              <div>
-                <span class="detail-label">Typical Work</span>
-                <strong>Flight & mission software</strong>
-              </div>
-
-              <div>
-                <span class="detail-label">Salary Range</span>
-                <strong>$95K–$180K+</strong>
-              </div>
-            </div>
-
-            <div class="career-tags">
-              <span>Software</span>
-              <span>Embedded Systems</span>
-              <span>Simulation</span>
-            </div>
-
-          </article>
-
-
-          <article
-            class="career-card"
-            data-name="Mission Analyst orbital mechanics trajectory spacecraft space missions"
-            data-category="research"
-            data-degree="masters"
-          >
-
-            <div class="career-top">
-              <span class="career-area">Research & Science</span>
-              <span class="career-degree">Bachelor's / Master's</span>
-            </div>
-
-            <h3>
-              Mission Analyst
-            </h3>
-
-            <p class="career-description">
-              Plans and evaluates spacecraft trajectories, mission
-              requirements and orbital operations.
-            </p>
-
-            <div class="career-details">
-              <div>
-                <span class="detail-label">Typical Work</span>
-                <strong>Trajectory & mission planning</strong>
-              </div>
-
-              <div>
-                <span class="detail-label">Salary Range</span>
-                <strong>$85K–$150K+</strong>
-              </div>
-            </div>
-
-            <div class="career-tags">
-              <span>Orbital Mechanics</span>
-              <span>Simulation</span>
-              <span>Space</span>
-            </div>
-
-          </article>
-
-
-          <article
-            class="career-card"
-            data-name="Aerospace Research Scientist aerodynamics materials propulsion research"
-            data-category="research"
-            data-degree="graduate"
-          >
-
-            <div class="career-top">
-              <span class="career-area">Research & Science</span>
-              <span class="career-degree">Graduate / PhD</span>
-            </div>
-
-            <h3>
-              Aerospace Research Scientist
-            </h3>
-
-            <p class="career-description">
-              Conducts advanced research in areas such as aerodynamics,
-              propulsion, materials, structures and space systems.
-            </p>
-
-            <div class="career-details">
-              <div>
-                <span class="detail-label">Typical Work</span>
-                <strong>Advanced research & experimentation</strong>
-              </div>
-
-              <div>
-                <span class="detail-label">Salary Range</span>
-                <strong>$90K–$170K+</strong>
-              </div>
-            </div>
-
-            <div class="career-tags">
-              <span>Research</span>
-              <span>Modeling</span>
-              <span>Experiments</span>
-            </div>
-
-          </article>
-
-
-          <article
-            class="career-card"
-            data-name="Flight Test Engineer aircraft testing performance safety"
-            data-category="operations"
-            data-degree="bachelors"
-          >
-
-            <div class="career-top">
-              <span class="career-area">Operations</span>
-              <span class="career-degree">Bachelor's+</span>
-            </div>
-
-            <h3>
-              Flight Test Engineer
-            </h3>
-
-            <p class="career-description">
-              Plans and evaluates aircraft or spacecraft test programs to
-              measure performance, safety and system behavior.
-            </p>
-
-            <div class="career-details">
-              <div>
-                <span class="detail-label">Typical Work</span>
-                <strong>Testing & performance analysis</strong>
-              </div>
-
-              <div>
-                <span class="detail-label">Salary Range</span>
-                <strong>$85K–$145K+</strong>
-              </div>
-            </div>
-
-            <div class="career-tags">
-              <span>Testing</span>
-              <span>Flight</span>
-              <span>Safety</span>
-            </div>
-
-          </article>
-
-
-          <article
-            class="career-card"
-            data-name="Systems Engineer aerospace systems integration requirements"
-            data-category="engineering"
-            data-degree="bachelors"
-          >
-
-            <div class="career-top">
-              <span class="career-area">Engineering</span>
-              <span class="career-degree">Bachelor's+</span>
-            </div>
-
-            <h3>
-              Aerospace Systems Engineer
-            </h3>
-
-            <p class="career-description">
-              Coordinates complex aerospace systems and ensures that
-              mechanical, electrical and software components work together.
-            </p>
-
-            <div class="career-details">
-              <div>
-                <span class="detail-label">Typical Work</span>
-                <strong>Systems integration</strong>
-              </div>
-
-              <div>
-                <span class="detail-label">Salary Range</span>
-                <strong>$95K–$165K+</strong>
-              </div>
-            </div>
-
-            <div class="career-tags">
-              <span>Integration</span>
-              <span>Requirements</span>
-              <span>Architecture</span>
-            </div>
-
-          </article>
-
-
-          <article
-            class="career-card"
-            data-name="Aerospace Program Manager business strategy projects operations"
-            data-category="business"
-            data-degree="bachelors"
-          >
-
-            <div class="career-top">
-              <span class="career-area">Business & Strategy</span>
-              <span class="career-degree">Bachelor's+</span>
-            </div>
-
-            <h3>
-              Aerospace Program Manager
-            </h3>
-
-            <p class="career-description">
-              Leads aerospace programs by coordinating budgets, schedules,
-              technical teams, customers and project goals.
-            </p>
-
-            <div class="career-details">
-              <div>
-                <span class="detail-label">Typical Work</span>
-                <strong>Program leadership</strong>
-              </div>
-
-              <div>
-                <span class="detail-label">Salary Range</span>
-                <strong>$110K–$190K+</strong>
-              </div>
-            </div>
-
-            <div class="career-tags">
-              <span>Leadership</span>
-              <span>Strategy</span>
-              <span>Programs</span>
-            </div>
-
-          </article>
-
-        </div>
-
-
-        <div class="career-empty-state" id="careerEmptyState">
-          <h3>No careers found</h3>
-
-          <p>
-            Try changing your search or filters.
-          </p>
-        </div>
 
       </div>
 
     </section>
 
+
   </main>
 
 
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
   <footer>
+
 
     <div class="container footer-content">
 
+
       <div>
-        <h3>Aerospace for Students</h3>
+
+        <h3>
+          Aerospace for Students
+        </h3>
 
         <p>
-          Helping the next generation discover their path into aerospace.
+          Helping the next generation discover
+          their path into aerospace.
         </p>
+
       </div>
+
+
 
       <div class="footer-links">
-        <a href="about.html">About</a>
-        <a href="universities.html">Universities</a>
-        <a href="careers.html">Careers</a>
-        <a href="guidance.html">Guidance</a>
+
+        <a href="about.html">
+          About
+        </a>
+
+        <a href="universities.html">
+          Universities
+        </a>
+
+        <a href="careers.html">
+          Careers
+        </a>
+
+        <a href="guidance.html">
+          Guidance
+        </a>
+
       </div>
 
+
     </div>
+
+
 
     <div class="container footer-bottom">
       © 2026 Aerospace for Students
     </div>
 
+
   </footer>
 
 
+
   <script src="js/script.js"></script>
+
   <script src="js/careers.js"></script>
 
+
 </body>
+
 </html>
