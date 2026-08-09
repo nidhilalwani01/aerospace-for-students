@@ -31,8 +31,8 @@ if (guidanceForm) {
 
       const originalButtonText =
         submitButton
-          ? submitButton.textContent
-          : "";
+          ? submitButton.textContent.trim()
+          : "Submit Guidance Request";
 
 
       if (submitButton) {
@@ -47,6 +47,11 @@ if (guidanceForm) {
 
       if (formStatus) {
 
+        formStatus.classList.remove(
+          "form-success",
+          "form-error"
+        );
+
         formStatus.textContent =
           "Sending your guidance request...";
 
@@ -54,9 +59,7 @@ if (guidanceForm) {
 
 
       const formData =
-        new FormData(
-          guidanceForm
-        );
+        new FormData(guidanceForm);
 
 
       try {
@@ -68,8 +71,7 @@ if (guidanceForm) {
               method: "POST",
               body: formData,
               headers: {
-                Accept:
-                  "application/json"
+                Accept: "application/json"
               }
             }
           );
@@ -82,9 +84,6 @@ if (guidanceForm) {
 
           if (formStatus) {
 
-            formStatus.textContent =
-              "Thank you! Your guidance request has been submitted successfully. We will review the information you shared and respond when possible.";
-
             formStatus.classList.remove(
               "form-error"
             );
@@ -92,15 +91,48 @@ if (guidanceForm) {
             formStatus.classList.add(
               "form-success"
             );
+
+            formStatus.textContent =
+              "Thank you! Your guidance request has been submitted successfully.";
 
           }
 
         } else {
 
-          if (formStatus) {
+          let errorMessage =
+            "We could not submit your request right now. Please try again.";
 
-            formStatus.textContent =
-              "We could not submit your request right now. Please try again in a moment.";
+
+          try {
+
+            const responseData =
+              await response.json();
+
+
+            if (
+              responseData &&
+              responseData.errors &&
+              responseData.errors.length > 0
+            ) {
+
+              errorMessage =
+                responseData.errors
+                  .map(
+                    error =>
+                      error.message
+                  )
+                  .join(" ");
+
+            }
+
+          } catch (error) {
+
+            // Keep the default error message.
+
+          }
+
+
+          if (formStatus) {
 
             formStatus.classList.remove(
               "form-success"
@@ -109,6 +141,9 @@ if (guidanceForm) {
             formStatus.classList.add(
               "form-error"
             );
+
+            formStatus.textContent =
+              errorMessage;
 
           }
 
@@ -118,9 +153,6 @@ if (guidanceForm) {
 
         if (formStatus) {
 
-          formStatus.textContent =
-            "There was a connection problem while submitting the form. Please check your internet connection and try again.";
-
           formStatus.classList.remove(
             "form-success"
           );
@@ -128,6 +160,9 @@ if (guidanceForm) {
           formStatus.classList.add(
             "form-error"
           );
+
+          formStatus.textContent =
+            "There was a connection problem while submitting the form. Please check your internet connection and try again.";
 
         }
 
