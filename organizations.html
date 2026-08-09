@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Aerospace Organizations | Aerospace for Students</title>
+  <title>Aerospace Organizations & Private Companies | Aerospace for Students</title>
   <link rel="icon" type="image/png" href="images/favicon/favicon.png">
 
   <meta
     name="description"
-    content="Explore major aerospace and space organizations around the world."
+    content="Explore national aerospace organizations, space agencies, research institutions and privately held aerospace companies around the world."
   >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,75 +64,132 @@
 
   <main>
 
-    <!-- HERO -->
     <section class="organizations-hero">
       <div class="container">
 
-        <p class="eyebrow">
-          GLOBAL AEROSPACE
-        </p>
+        <p class="eyebrow">GLOBAL AEROSPACE ECOSYSTEM</p>
 
         <h1>
-          Aerospace Organizations Around the World
+          Explore Aerospace Organizations &amp; Companies
         </h1>
 
         <p>
-          Explore national space agencies, government aerospace organizations,
-          research institutions and major organizations shaping aviation and space.
+          Discover national space agencies, government and research organizations,
+          and a curated directory of privately held aerospace companies shaping
+          aviation, launch, satellites, spacecraft and space technology.
         </p>
+
+        <div class="organizations-meta">
+          <span>12 public-sector organizations</span>
+          <span>12 private companies</span>
+          <span>Official links</span>
+          <span>Last reviewed: August 2026</span>
+        </div>
 
       </div>
     </section>
 
 
-    <!-- DIRECTORY -->
     <section class="organizations-section">
 
       <div class="container">
 
+        <div class="organizations-intro">
+
+          <div>
+            <p class="eyebrow">EXPLORE THE ECOSYSTEM</p>
+
+            <h2>
+              From national agencies to emerging space companies.
+            </h2>
+          </div>
+
+          <p>
+            Use the directory to understand who shapes the aerospace sector,
+            what they work on and where they are based. The private-company
+            view is intentionally focused on privately held companies rather
+            than mixing them with publicly traded aerospace corporations.
+          </p>
+
+        </div>
+
+
+        <div class="organization-view-tabs" aria-label="Organization directory views">
+
+          <button class="organization-view-tab active-view" type="button" data-sector="all">
+            All Aerospace
+          </button>
+
+          <button class="organization-view-tab" type="button" data-sector="government">
+            National &amp; Government
+          </button>
+
+          <button class="organization-view-tab" type="button" data-sector="private">
+            Private Companies
+          </button>
+
+        </div>
+
+
         <div class="organization-filters">
 
           <div class="organization-filter-group organization-search">
-            <label for="organizationSearch">
-              Search organizations
-            </label>
-
+            <label for="organizationSearch">Search</label>
             <input
               type="text"
               id="organizationSearch"
-              placeholder="Search by organization or country..."
+              placeholder="Search organization, company, country or focus..."
             >
           </div>
 
 
           <div class="organization-filter-group">
-            <label for="countryFilter">
-              Country
-            </label>
+            <label for="countryFilter">Country / Region</label>
 
             <select id="countryFilter">
               <option value="all">All Countries</option>
               <option value="usa">United States</option>
               <option value="india">India</option>
+              <option value="europe">Europe</option>
+              <option value="uk">United Kingdom</option>
+              <option value="france">France</option>
+              <option value="germany">Germany</option>
+              <option value="italy">Italy</option>
+              <option value="spain">Spain</option>
               <option value="japan">Japan</option>
               <option value="canada">Canada</option>
-              <option value="germany">Germany</option>
-              <option value="uk">United Kingdom</option>
-              <option value="europe">Europe</option>
+              <option value="australia">Australia</option>
+              <option value="uae">United Arab Emirates</option>
             </select>
           </div>
 
 
           <div class="organization-filter-group">
-            <label for="organizationTypeFilter">
-              Organization Type
-            </label>
+            <label for="organizationTypeFilter">Organization Type</label>
 
             <select id="organizationTypeFilter">
               <option value="all">All Types</option>
               <option value="space-agency">Space Agency</option>
               <option value="research">Research Organization</option>
-              <option value="government">Government Organization</option>
+              <option value="government">Government Agency</option>
+              <option value="private-company">Private Company</option>
+            </select>
+          </div>
+
+
+          <div class="organization-filter-group">
+            <label for="focusFilter">Aerospace Focus</label>
+
+            <select id="focusFilter">
+              <option value="all">All Focus Areas</option>
+              <option value="launch">Launch</option>
+              <option value="aeronautics">Aeronautics</option>
+              <option value="propulsion">Propulsion</option>
+              <option value="satellites">Satellites</option>
+              <option value="spacecraft">Spacecraft</option>
+              <option value="human spaceflight">Human Spaceflight</option>
+              <option value="earth observation">Earth Observation</option>
+              <option value="research">Research</option>
             </select>
           </div>
 
@@ -142,389 +199,976 @@
         <div class="organizations-heading">
 
           <div>
-            <p class="eyebrow">
-              ORGANIZATION DIRECTORY
-            </p>
+            <p class="eyebrow">AEROSPACE DIRECTORY</p>
 
-            <h2>
-              Explore Aerospace Organizations
+            <h2 id="organizationDirectoryTitle">
+              Organizations &amp; Companies
             </h2>
           </div>
 
           <p id="organizationResultCount">
-            Showing 8 organizations
+            Showing 24 entries
           </p>
 
         </div>
 
 
-        <div class="organizations-grid">
+        <div class="organizations-grid" id="organizationsGrid">
 
-
-          <!-- NASA -->
-          <article
-            class="organization-card"
-            data-name="NASA National Aeronautics and Space Administration United States USA"
-            data-country="usa"
-            data-type="space-agency"
-          >
-
-            <div class="organization-card-top">
+        <article
+          class="organization-card"
+          data-name="NASA National Aeronautics and Space Administration United States Space Exploration Aeronautics Earth Science"
+          data-country="usa"
+          data-type="space-agency"
+          data-sector="government"
+          data-focus="space exploration aeronautics earth science"
+        >
+          <div class="organization-card-top">
+            <div class="organization-badges">
               <span class="organization-type">Space Agency</span>
-              <span class="organization-country">USA</span>
+              <span class="verified-badge">Verified</span>
             </div>
+            <span class="organization-country">United States</span>
+          </div>
 
-            <h3>
-              NASA
-            </h3>
+          <h3>NASA</h3>
+          <p class="organization-full-name">National Aeronautics and Space Administration</p>
 
-            <p class="organization-full-name">
-              National Aeronautics and Space Administration
-            </p>
+          <p class="organization-description">
+            The U.S. civil space agency, leading missions in human spaceflight, planetary science, Earth science, aeronautics and technology development.
+          </p>
 
-            <p class="organization-description">
-              The United States civil space agency responsible for space
-              exploration, aeronautics research, science missions and technology development.
-            </p>
-
-            <div class="organization-tags">
+          <div class="organization-tags">
               <span>Space Exploration</span>
               <span>Aeronautics</span>
-              <span>Research</span>
-            </div>
+              <span>Earth Science</span>
+          </div>
 
-            <a
-              href="https://www.nasa.gov/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="organization-link"
-            >
-              Visit Organization →
-            </a>
-
-          </article>
-
-
-          <!-- ISRO -->
-          <article
-            class="organization-card"
-            data-name="ISRO Indian Space Research Organisation India"
-            data-country="india"
-            data-type="space-agency"
+          <a
+            href="https://www.nasa.gov/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="organization-link"
           >
+            Visit Official Website →
+          </a>
+        </article>
 
-            <div class="organization-card-top">
+        <article
+          class="organization-card"
+          data-name="ISRO Indian Space Research Organisation India Launch Vehicles Satellites Space Science"
+          data-country="india"
+          data-type="space-agency"
+          data-sector="government"
+          data-focus="launch vehicles satellites space science"
+        >
+          <div class="organization-card-top">
+            <div class="organization-badges">
               <span class="organization-type">Space Agency</span>
-              <span class="organization-country">India</span>
+              <span class="verified-badge">Verified</span>
             </div>
+            <span class="organization-country">India</span>
+          </div>
 
-            <h3>
-              ISRO
-            </h3>
+          <h3>ISRO</h3>
+          <p class="organization-full-name">Indian Space Research Organisation</p>
 
-            <p class="organization-full-name">
-              Indian Space Research Organisation
-            </p>
+          <p class="organization-description">
+            India's national space organization, developing launch vehicles, satellites, exploration missions and space applications.
+          </p>
 
-            <p class="organization-description">
-              India's national space agency focused on launch vehicles,
-              satellites, planetary exploration and space applications.
-            </p>
-
-            <div class="organization-tags">
+          <div class="organization-tags">
               <span>Launch Vehicles</span>
               <span>Satellites</span>
               <span>Space Science</span>
-            </div>
+          </div>
 
-            <a
-              href="https://www.isro.gov.in/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="organization-link"
-            >
-              Visit Organization →
-            </a>
-
-          </article>
-
-
-          <!-- ESA -->
-          <article
-            class="organization-card"
-            data-name="ESA European Space Agency Europe"
-            data-country="europe"
-            data-type="space-agency"
+          <a
+            href="https://www.isro.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="organization-link"
           >
+            Visit Official Website →
+          </a>
+        </article>
 
-            <div class="organization-card-top">
-              <span class="organization-type">Space Agency</span>
-              <span class="organization-country">Europe</span>
+        <article
+          class="organization-card"
+          data-name="ESA European Space Agency Europe Exploration Earth Observation Launch"
+          data-country="europe"
+          data-type="space-agency"
+          data-sector="government"
+          data-focus="exploration earth observation launch"
+        >
+          <div class="organization-card-top">
+            <div class="organization-badges">
+              <span class="organization-type">Intergovernmental Agency</span>
+              <span class="verified-badge">Verified</span>
             </div>
+            <span class="organization-country">Europe</span>
+          </div>
 
-            <h3>
-              ESA
-            </h3>
+          <h3>ESA</h3>
+          <p class="organization-full-name">European Space Agency</p>
 
-            <p class="organization-full-name">
-              European Space Agency
-            </p>
+          <p class="organization-description">
+            A multinational European organization coordinating civil space programs in exploration, science, Earth observation, navigation and launch systems.
+          </p>
 
-            <p class="organization-description">
-              A multinational European organization supporting space science,
-              exploration, launch systems, Earth observation and satellite missions.
-            </p>
-
-            <div class="organization-tags">
-              <span>Space Science</span>
-              <span>Satellites</span>
+          <div class="organization-tags">
               <span>Exploration</span>
-            </div>
+              <span>Earth Observation</span>
+              <span>Launch</span>
+          </div>
 
-            <a
-              href="https://www.esa.int/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="organization-link"
-            >
-              Visit Organization →
-            </a>
-
-          </article>
-
-
-          <!-- JAXA -->
-          <article
-            class="organization-card"
-            data-name="JAXA Japan Aerospace Exploration Agency Japan"
-            data-country="japan"
-            data-type="space-agency"
+          <a
+            href="https://www.esa.int/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="organization-link"
           >
+            Visit Official Website →
+          </a>
+        </article>
 
-            <div class="organization-card-top">
+        <article
+          class="organization-card"
+          data-name="JAXA Japan Aerospace Exploration Agency Japan Launch Aviation Planetary Science"
+          data-country="japan"
+          data-type="space-agency"
+          data-sector="government"
+          data-focus="launch aviation planetary science"
+        >
+          <div class="organization-card-top">
+            <div class="organization-badges">
               <span class="organization-type">Space Agency</span>
-              <span class="organization-country">Japan</span>
+              <span class="verified-badge">Verified</span>
             </div>
+            <span class="organization-country">Japan</span>
+          </div>
 
-            <h3>
-              JAXA
-            </h3>
+          <h3>JAXA</h3>
+          <p class="organization-full-name">Japan Aerospace Exploration Agency</p>
 
-            <p class="organization-full-name">
-              Japan Aerospace Exploration Agency
-            </p>
+          <p class="organization-description">
+            Japan's national aerospace agency, active in space transportation, satellites, planetary exploration, aviation and human spaceflight.
+          </p>
 
-            <p class="organization-description">
-              Japan's national aerospace agency working in launch systems,
-              satellites, planetary science, aviation and human spaceflight.
-            </p>
-
-            <div class="organization-tags">
-              <span>Spaceflight</span>
+          <div class="organization-tags">
+              <span>Launch</span>
               <span>Aviation</span>
               <span>Planetary Science</span>
-            </div>
+          </div>
 
-            <a
-              href="https://global.jaxa.jp/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="organization-link"
-            >
-              Visit Organization →
-            </a>
-
-          </article>
-
-
-          <!-- CSA -->
-          <article
-            class="organization-card"
-            data-name="Canadian Space Agency CSA Canada"
-            data-country="canada"
-            data-type="space-agency"
+          <a
+            href="https://global.jaxa.jp/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="organization-link"
           >
+            Visit Official Website →
+          </a>
+        </article>
 
-            <div class="organization-card-top">
+        <article
+          class="organization-card"
+          data-name="CSA Canadian Space Agency Canada Robotics Satellites Human Spaceflight"
+          data-country="canada"
+          data-type="space-agency"
+          data-sector="government"
+          data-focus="robotics satellites human spaceflight"
+        >
+          <div class="organization-card-top">
+            <div class="organization-badges">
               <span class="organization-type">Space Agency</span>
-              <span class="organization-country">Canada</span>
+              <span class="verified-badge">Verified</span>
             </div>
+            <span class="organization-country">Canada</span>
+          </div>
 
-            <h3>
-              CSA
-            </h3>
+          <h3>CSA</h3>
+          <p class="organization-full-name">Canadian Space Agency</p>
 
-            <p class="organization-full-name">
-              Canadian Space Agency
-            </p>
+          <p class="organization-description">
+            Canada's national space agency, known for space robotics, Earth observation, satellite technologies, science and astronaut programs.
+          </p>
 
-            <p class="organization-description">
-              Canada's national space agency supporting space robotics,
-              satellite technology, Earth observation and astronaut programs.
-            </p>
-
-            <div class="organization-tags">
+          <div class="organization-tags">
               <span>Robotics</span>
               <span>Satellites</span>
               <span>Human Spaceflight</span>
-            </div>
+          </div>
 
-            <a
-              href="https://www.asc-csa.gc.ca/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="organization-link"
-            >
-              Visit Organization →
-            </a>
-
-          </article>
-
-
-          <!-- DLR -->
-          <article
-            class="organization-card"
-            data-name="DLR German Aerospace Center Germany"
-            data-country="germany"
-            data-type="research"
+          <a
+            href="https://www.asc-csa.gc.ca/eng/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="organization-link"
           >
+            Visit Official Website →
+          </a>
+        </article>
 
-            <div class="organization-card-top">
+        <article
+          class="organization-card"
+          data-name="DLR German Aerospace Center Germany Aeronautics Space Research"
+          data-country="germany"
+          data-type="research"
+          data-sector="government"
+          data-focus="aeronautics space research"
+        >
+          <div class="organization-card-top">
+            <div class="organization-badges">
               <span class="organization-type">Research Organization</span>
-              <span class="organization-country">Germany</span>
+              <span class="verified-badge">Verified</span>
             </div>
+            <span class="organization-country">Germany</span>
+          </div>
 
-            <h3>
-              DLR
-            </h3>
+          <h3>DLR</h3>
+          <p class="organization-full-name">German Aerospace Center</p>
 
-            <p class="organization-full-name">
-              German Aerospace Center
-            </p>
+          <p class="organization-description">
+            Germany's national center for aeronautics and space research, with major programs in aviation, space, energy and transportation.
+          </p>
 
-            <p class="organization-description">
-              Germany's national center for aerospace, energy and transportation
-              research with major work in aeronautics and space systems.
-            </p>
-
-            <div class="organization-tags">
+          <div class="organization-tags">
               <span>Aeronautics</span>
               <span>Space</span>
               <span>Research</span>
-            </div>
+          </div>
 
-            <a
-              href="https://www.dlr.de/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="organization-link"
-            >
-              Visit Organization →
-            </a>
-
-          </article>
-
-
-          <!-- UK SPACE AGENCY -->
-          <article
-            class="organization-card"
-            data-name="UK Space Agency United Kingdom UK"
-            data-country="uk"
-            data-type="government"
+          <a
+            href="https://www.dlr.de/en"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="organization-link"
           >
+            Visit Official Website →
+          </a>
+        </article>
 
-            <div class="organization-card-top">
-              <span class="organization-type">Government Organization</span>
-              <span class="organization-country">UK</span>
+        <article
+          class="organization-card"
+          data-name="UK Space Agency United Kingdom Space Agency United Kingdom Space Policy Industry Science"
+          data-country="uk"
+          data-type="government"
+          data-sector="government"
+          data-focus="space policy industry science"
+        >
+          <div class="organization-card-top">
+            <div class="organization-badges">
+              <span class="organization-type">Government Agency</span>
+              <span class="verified-badge">Verified</span>
             </div>
+            <span class="organization-country">United Kingdom</span>
+          </div>
 
-            <h3>
-              UK Space Agency
-            </h3>
+          <h3>UK Space Agency</h3>
+          <p class="organization-full-name">United Kingdom Space Agency</p>
 
-            <p class="organization-full-name">
-              United Kingdom Space Agency
-            </p>
+          <p class="organization-description">
+            The UK government agency responsible for civil space policy and supporting the growth of the country's space sector.
+          </p>
 
-            <p class="organization-description">
-              The UK government organization responsible for national space
-              strategy, space science initiatives and commercial space growth.
-            </p>
+          <div class="organization-tags">
+              <span>Space Policy</span>
+              <span>Industry</span>
+              <span>Science</span>
+          </div>
 
-            <div class="organization-tags">
+          <a
+            href="https://www.gov.uk/government/organisations/uk-space-agency"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="organization-link"
+          >
+            Visit Official Website →
+          </a>
+        </article>
+
+        <article
+          class="organization-card"
+          data-name="CNES Centre National d'Études Spatiales France Launch Earth Observation Science"
+          data-country="france"
+          data-type="space-agency"
+          data-sector="government"
+          data-focus="launch earth observation science"
+        >
+          <div class="organization-card-top">
+            <div class="organization-badges">
+              <span class="organization-type">Space Agency</span>
+              <span class="verified-badge">Verified</span>
+            </div>
+            <span class="organization-country">France</span>
+          </div>
+
+          <h3>CNES</h3>
+          <p class="organization-full-name">Centre National d'Études Spatiales</p>
+
+          <p class="organization-description">
+            France's national space agency, supporting space science, Earth observation, launch activities and international missions.
+          </p>
+
+          <div class="organization-tags">
+              <span>Launch</span>
+              <span>Earth Observation</span>
+              <span>Science</span>
+          </div>
+
+          <a
+            href="https://cnes.fr/en"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="organization-link"
+          >
+            Visit Official Website →
+          </a>
+        </article>
+
+        <article
+          class="organization-card"
+          data-name="ASI Italian Space Agency Italy Science Exploration Earth Observation"
+          data-country="italy"
+          data-type="space-agency"
+          data-sector="government"
+          data-focus="science exploration earth observation"
+        >
+          <div class="organization-card-top">
+            <div class="organization-badges">
+              <span class="organization-type">Space Agency</span>
+              <span class="verified-badge">Verified</span>
+            </div>
+            <span class="organization-country">Italy</span>
+          </div>
+
+          <h3>ASI</h3>
+          <p class="organization-full-name">Italian Space Agency</p>
+
+          <p class="organization-description">
+            Italy's national space agency, coordinating national space activities, scientific missions, exploration and international cooperation.
+          </p>
+
+          <div class="organization-tags">
+              <span>Science</span>
+              <span>Exploration</span>
+              <span>Earth Observation</span>
+          </div>
+
+          <a
+            href="https://www.asi.it/en/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="organization-link"
+          >
+            Visit Official Website →
+          </a>
+        </article>
+
+        <article
+          class="organization-card"
+          data-name="Australian Space Agency Australian Space Agency Australia Policy Industry Space Workforce"
+          data-country="australia"
+          data-type="government"
+          data-sector="government"
+          data-focus="policy industry space workforce"
+        >
+          <div class="organization-card-top">
+            <div class="organization-badges">
+              <span class="organization-type">Government Agency</span>
+              <span class="verified-badge">Verified</span>
+            </div>
+            <span class="organization-country">Australia</span>
+          </div>
+
+          <h3>Australian Space Agency</h3>
+          <p class="organization-full-name">Australian Space Agency</p>
+
+          <p class="organization-description">
+            Australia's civil space agency, coordinating government space matters while supporting industry growth, regulation and workforce development.
+          </p>
+
+          <div class="organization-tags">
+              <span>Policy</span>
+              <span>Industry</span>
+              <span>Space Workforce</span>
+          </div>
+
+          <a
+            href="https://www.space.gov.au/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="organization-link"
+          >
+            Visit Official Website →
+          </a>
+        </article>
+
+        <article
+          class="organization-card"
+          data-name="UAE Space Agency United Arab Emirates Space Agency United Arab Emirates Space Policy Science Exploration"
+          data-country="uae"
+          data-type="space-agency"
+          data-sector="government"
+          data-focus="space policy science exploration"
+        >
+          <div class="organization-card-top">
+            <div class="organization-badges">
+              <span class="organization-type">Space Agency</span>
+              <span class="verified-badge">Verified</span>
+            </div>
+            <span class="organization-country">United Arab Emirates</span>
+          </div>
+
+          <h3>UAE Space Agency</h3>
+          <p class="organization-full-name">United Arab Emirates Space Agency</p>
+
+          <p class="organization-description">
+            A federal agency guiding the UAE space sector through policy, regulation, research, partnerships and national space initiatives.
+          </p>
+
+          <div class="organization-tags">
               <span>Space Policy</span>
               <span>Science</span>
-              <span>Industry</span>
-            </div>
+              <span>Exploration</span>
+          </div>
 
-            <a
-              href="https://www.gov.uk/government/organisations/uk-space-agency"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="organization-link"
-            >
-              Visit Organization →
-            </a>
-
-          </article>
-
-
-          <!-- FAA -->
-          <article
-            class="organization-card"
-            data-name="FAA Federal Aviation Administration USA United States"
-            data-country="usa"
-            data-type="government"
+          <a
+            href="https://space.gov.ae/en"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="organization-link"
           >
+            Visit Official Website →
+          </a>
+        </article>
 
-            <div class="organization-card-top">
-              <span class="organization-type">Government Organization</span>
-              <span class="organization-country">USA</span>
+        <article
+          class="organization-card"
+          data-name="FAA Federal Aviation Administration United States Aviation Safety Commercial Space"
+          data-country="usa"
+          data-type="government"
+          data-sector="government"
+          data-focus="aviation safety commercial space"
+        >
+          <div class="organization-card-top">
+            <div class="organization-badges">
+              <span class="organization-type">Government Agency</span>
+              <span class="verified-badge">Verified</span>
             </div>
+            <span class="organization-country">United States</span>
+          </div>
 
-            <h3>
-              FAA
-            </h3>
+          <h3>FAA</h3>
+          <p class="organization-full-name">Federal Aviation Administration</p>
 
-            <p class="organization-full-name">
-              Federal Aviation Administration
-            </p>
+          <p class="organization-description">
+            The U.S. aviation authority responsible for civil aviation safety, national airspace operations and commercial space transportation oversight.
+          </p>
 
-            <p class="organization-description">
-              The U.S. aviation authority responsible for civil aviation safety,
-              airspace operations and commercial space transportation oversight.
-            </p>
-
-            <div class="organization-tags">
+          <div class="organization-tags">
               <span>Aviation</span>
               <span>Safety</span>
               <span>Commercial Space</span>
+          </div>
+
+          <a
+            href="https://www.faa.gov/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="organization-link"
+          >
+            Visit Official Website →
+          </a>
+        </article>
+
+        <article
+          class="organization-card"
+          data-name="SpaceX Space Exploration Technologies Corp. United States Launch Spacecraft Human Spaceflight"
+          data-country="usa"
+          data-type="private-company"
+          data-sector="private"
+          data-focus="launch spacecraft human spaceflight"
+        >
+          <div class="organization-card-top">
+            <div class="organization-badges">
+              <span class="organization-type">Private Company</span>
+              <span class="verified-badge">Verified</span>
             </div>
+            <span class="organization-country">United States</span>
+          </div>
 
-            <a
-              href="https://www.faa.gov/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="organization-link"
-            >
-              Visit Organization →
-            </a>
+          <h3>SpaceX</h3>
+          <p class="organization-full-name">Space Exploration Technologies Corp.</p>
 
-          </article>
+          <p class="organization-description">
+            Designs, manufactures and launches advanced rockets and spacecraft, including Falcon, Dragon and Starship systems.
+          </p>
+
+          <div class="organization-tags">
+              <span>Launch</span>
+              <span>Spacecraft</span>
+              <span>Human Spaceflight</span>
+          </div>
+
+          <a
+            href="https://www.spacex.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="organization-link"
+          >
+            Visit Official Website →
+          </a>
+        </article>
+
+        <article
+          class="organization-card"
+          data-name="Blue Origin Blue Origin United States Launch Rocket Engines Human Spaceflight"
+          data-country="usa"
+          data-type="private-company"
+          data-sector="private"
+          data-focus="launch rocket engines human spaceflight"
+        >
+          <div class="organization-card-top">
+            <div class="organization-badges">
+              <span class="organization-type">Private Company</span>
+              <span class="verified-badge">Verified</span>
+            </div>
+            <span class="organization-country">United States</span>
+          </div>
+
+          <h3>Blue Origin</h3>
+          <p class="organization-full-name">Blue Origin</p>
+
+          <p class="organization-description">
+            Develops reusable launch vehicles, rocket engines and space systems intended to expand access to space.
+          </p>
+
+          <div class="organization-tags">
+              <span>Launch</span>
+              <span>Rocket Engines</span>
+              <span>Human Spaceflight</span>
+          </div>
+
+          <a
+            href="https://www.blueorigin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="organization-link"
+          >
+            Visit Official Website →
+          </a>
+        </article>
+
+        <article
+          class="organization-card"
+          data-name="Sierra Space Sierra Space United States Spacecraft Satellites Space Infrastructure"
+          data-country="usa"
+          data-type="private-company"
+          data-sector="private"
+          data-focus="spacecraft satellites space infrastructure"
+        >
+          <div class="organization-card-top">
+            <div class="organization-badges">
+              <span class="organization-type">Private Company</span>
+              <span class="verified-badge">Verified</span>
+            </div>
+            <span class="organization-country">United States</span>
+          </div>
+
+          <h3>Sierra Space</h3>
+          <p class="organization-full-name">Sierra Space</p>
+
+          <p class="organization-description">
+            Develops reusable spaceplanes, satellites, spacecraft subsystems and orbital infrastructure technologies.
+          </p>
+
+          <div class="organization-tags">
+              <span>Spacecraft</span>
+              <span>Satellites</span>
+              <span>Space Infrastructure</span>
+          </div>
+
+          <a
+            href="https://www.sierraspace.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="organization-link"
+          >
+            Visit Official Website →
+          </a>
+        </article>
+
+        <article
+          class="organization-card"
+          data-name="Axiom Space Axiom Space, Inc. United States Human Spaceflight Space Stations Spacesuits"
+          data-country="usa"
+          data-type="private-company"
+          data-sector="private"
+          data-focus="human spaceflight space stations spacesuits"
+        >
+          <div class="organization-card-top">
+            <div class="organization-badges">
+              <span class="organization-type">Private Company</span>
+              <span class="verified-badge">Verified</span>
+            </div>
+            <span class="organization-country">United States</span>
+          </div>
+
+          <h3>Axiom Space</h3>
+          <p class="organization-full-name">Axiom Space, Inc.</p>
+
+          <p class="organization-description">
+            Provides commercial human-spaceflight services and develops technologies for future commercial space-station operations.
+          </p>
+
+          <div class="organization-tags">
+              <span>Human Spaceflight</span>
+              <span>Space Stations</span>
+              <span>Spacesuits</span>
+          </div>
+
+          <a
+            href="https://www.axiomspace.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="organization-link"
+          >
+            Visit Official Website →
+          </a>
+        </article>
+
+        <article
+          class="organization-card"
+          data-name="Relativity Space Relativity Space United States Launch Propulsion Manufacturing"
+          data-country="usa"
+          data-type="private-company"
+          data-sector="private"
+          data-focus="launch propulsion manufacturing"
+        >
+          <div class="organization-card-top">
+            <div class="organization-badges">
+              <span class="organization-type">Private Company</span>
+              <span class="verified-badge">Verified</span>
+            </div>
+            <span class="organization-country">United States</span>
+          </div>
+
+          <h3>Relativity Space</h3>
+          <p class="organization-full-name">Relativity Space</p>
+
+          <p class="organization-description">
+            Develops launch vehicles with an emphasis on reusable systems, propulsion and advanced manufacturing.
+          </p>
+
+          <div class="organization-tags">
+              <span>Launch</span>
+              <span>Propulsion</span>
+              <span>Manufacturing</span>
+          </div>
+
+          <a
+            href="https://www.relativityspace.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="organization-link"
+          >
+            Visit Official Website →
+          </a>
+        </article>
+
+        <article
+          class="organization-card"
+          data-name="Stoke Space Stoke Space United States Reusable Launch Propulsion Space Logistics"
+          data-country="usa"
+          data-type="private-company"
+          data-sector="private"
+          data-focus="reusable launch propulsion space logistics"
+        >
+          <div class="organization-card-top">
+            <div class="organization-badges">
+              <span class="organization-type">Private Company</span>
+              <span class="verified-badge">Verified</span>
+            </div>
+            <span class="organization-country">United States</span>
+          </div>
+
+          <h3>Stoke Space</h3>
+          <p class="organization-full-name">Stoke Space</p>
+
+          <p class="organization-description">
+            Develops reusable launch systems, including engines, reentry technology and a reusable upper-stage architecture.
+          </p>
+
+          <div class="organization-tags">
+              <span>Reusable Launch</span>
+              <span>Propulsion</span>
+              <span>Space Logistics</span>
+          </div>
+
+          <a
+            href="https://www.stokespace.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="organization-link"
+          >
+            Visit Official Website →
+          </a>
+        </article>
+
+        <article
+          class="organization-card"
+          data-name="Vast Vast United States Space Stations Human Spaceflight Spacecraft"
+          data-country="usa"
+          data-type="private-company"
+          data-sector="private"
+          data-focus="space stations human spaceflight spacecraft"
+        >
+          <div class="organization-card-top">
+            <div class="organization-badges">
+              <span class="organization-type">Private Company</span>
+              <span class="verified-badge">Verified</span>
+            </div>
+            <span class="organization-country">United States</span>
+          </div>
+
+          <h3>Vast</h3>
+          <p class="organization-full-name">Vast</p>
+
+          <p class="organization-description">
+            Develops commercial space-station infrastructure and human-spaceflight systems for long-duration activity in orbit.
+          </p>
+
+          <div class="organization-tags">
+              <span>Space Stations</span>
+              <span>Human Spaceflight</span>
+              <span>Spacecraft</span>
+          </div>
+
+          <a
+            href="https://www.vastspace.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="organization-link"
+          >
+            Visit Official Website →
+          </a>
+        </article>
+
+        <article
+          class="organization-card"
+          data-name="Impulse Space Impulse Space United States In-Space Mobility Spacecraft Propulsion"
+          data-country="usa"
+          data-type="private-company"
+          data-sector="private"
+          data-focus="in-space mobility spacecraft propulsion"
+        >
+          <div class="organization-card-top">
+            <div class="organization-badges">
+              <span class="organization-type">Private Company</span>
+              <span class="verified-badge">Verified</span>
+            </div>
+            <span class="organization-country">United States</span>
+          </div>
+
+          <h3>Impulse Space</h3>
+          <p class="organization-full-name">Impulse Space</p>
+
+          <p class="organization-description">
+            Builds spacecraft for in-space transportation, orbital transfer, hosted payloads and mission mobility.
+          </p>
+
+          <div class="organization-tags">
+              <span>In-Space Mobility</span>
+              <span>Spacecraft</span>
+              <span>Propulsion</span>
+          </div>
+
+          <a
+            href="https://www.impulsespace.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="organization-link"
+          >
+            Visit Official Website →
+          </a>
+        </article>
+
+        <article
+          class="organization-card"
+          data-name="PLD Space PLD Space Spain Launch Reusable Rockets Propulsion"
+          data-country="spain"
+          data-type="private-company"
+          data-sector="private"
+          data-focus="launch reusable rockets propulsion"
+        >
+          <div class="organization-card-top">
+            <div class="organization-badges">
+              <span class="organization-type">Private Company</span>
+              <span class="verified-badge">Verified</span>
+            </div>
+            <span class="organization-country">Spain</span>
+          </div>
+
+          <h3>PLD Space</h3>
+          <p class="organization-full-name">PLD Space</p>
+
+          <p class="organization-description">
+            A Spanish space company developing reusable launch vehicles for small and medium-sized satellite missions.
+          </p>
+
+          <div class="organization-tags">
+              <span>Launch</span>
+              <span>Reusable Rockets</span>
+              <span>Propulsion</span>
+          </div>
+
+          <a
+            href="https://www.pldspace.com/en/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="organization-link"
+          >
+            Visit Official Website →
+          </a>
+        </article>
+
+        <article
+          class="organization-card"
+          data-name="Agnikul Cosmos Agnikul Cosmos Private Limited India Launch 3D Printing Propulsion"
+          data-country="india"
+          data-type="private-company"
+          data-sector="private"
+          data-focus="launch 3d printing propulsion"
+        >
+          <div class="organization-card-top">
+            <div class="organization-badges">
+              <span class="organization-type">Private Company</span>
+              <span class="verified-badge">Verified</span>
+            </div>
+            <span class="organization-country">India</span>
+          </div>
+
+          <h3>Agnikul Cosmos</h3>
+          <p class="organization-full-name">Agnikul Cosmos Private Limited</p>
+
+          <p class="organization-description">
+            Designs and manufactures orbital-class launch vehicles powered by in-house 3D-printed rocket-engine technology.
+          </p>
+
+          <div class="organization-tags">
+              <span>Launch</span>
+              <span>3D Printing</span>
+              <span>Propulsion</span>
+          </div>
+
+          <a
+            href="https://agnikul.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="organization-link"
+          >
+            Visit Official Website →
+          </a>
+        </article>
+
+        <article
+          class="organization-card"
+          data-name="Bellatrix Aerospace Bellatrix Aerospace India Propulsion Space Mobility Satellites"
+          data-country="india"
+          data-type="private-company"
+          data-sector="private"
+          data-focus="propulsion space mobility satellites"
+        >
+          <div class="organization-card-top">
+            <div class="organization-badges">
+              <span class="organization-type">Private Company</span>
+              <span class="verified-badge">Verified</span>
+            </div>
+            <span class="organization-country">India</span>
+          </div>
+
+          <h3>Bellatrix Aerospace</h3>
+          <p class="organization-full-name">Bellatrix Aerospace</p>
+
+          <p class="organization-description">
+            Develops electric and green propulsion technologies for satellite mobility and a range of in-space missions.
+          </p>
+
+          <div class="organization-tags">
+              <span>Propulsion</span>
+              <span>Space Mobility</span>
+              <span>Satellites</span>
+          </div>
+
+          <a
+            href="https://bellatrix.aero/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="organization-link"
+          >
+            Visit Official Website →
+          </a>
+        </article>
+
+        <article
+          class="organization-card"
+          data-name="Pixxel Pixxel India / United States Earth Observation Satellites Data"
+          data-country="india"
+          data-type="private-company"
+          data-sector="private"
+          data-focus="earth observation satellites data"
+        >
+          <div class="organization-card-top">
+            <div class="organization-badges">
+              <span class="organization-type">Private Company</span>
+              <span class="verified-badge">Verified</span>
+            </div>
+            <span class="organization-country">India / United States</span>
+          </div>
+
+          <h3>Pixxel</h3>
+          <p class="organization-full-name">Pixxel</p>
+
+          <p class="organization-description">
+            Builds hyperspectral Earth-observation satellites and software designed to reveal environmental and commercial insights.
+          </p>
+
+          <div class="organization-tags">
+              <span>Earth Observation</span>
+              <span>Satellites</span>
+              <span>Data</span>
+          </div>
+
+          <a
+            href="https://www.pixxel.space/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="organization-link"
+          >
+            Visit Official Website →
+          </a>
+        </article>
 
         </div>
 
 
         <div class="organization-empty-state" id="organizationEmptyState">
+          <h3>No results found</h3>
+          <p>Try changing your search or filter selections.</p>
+        </div>
 
-          <h3>
-            No organizations found
-          </h3>
+
+        <div class="organizations-source-note">
+          <strong>About this directory</strong>
 
           <p>
-            Try changing your search or filters.
+            Descriptions and official links are based on organization and
+            company sources reviewed in August 2026. Company ownership status
+            can change, so private-company classifications should be reviewed
+            periodically.
           </p>
-
         </div>
 
       </div>
@@ -562,6 +1206,7 @@
     </div>
 
   </footer>
+
 
   <script src="js/script.js"></script>
   <script src="js/organizations.js"></script>
